@@ -18,7 +18,7 @@
 		.stretch {
 		/*picture is 1600x1067 */
 			width:100%;
-			/*height:100%;*/
+			height:100%;
 		}
 
 		div.profilebox {
@@ -76,7 +76,7 @@ div.bio
 		}
 	</script>
 </head>
-<body onLoad="setBday();">
+<body>
 <div id="background">
 <img src="background.jpg" class="stretch" alt="" />
 <!-- profile -->
@@ -84,7 +84,7 @@ div.bio
 	<div class="profile">
 		<div class="profile-head">Ross Ogilvie</div>
 		<div class="bio">
-			<p>A <span id="age">0</span> year old maths PhD at the University of Sydney.</p>
+			<p>A <span id="age" onLoad="setBday();">22</span> year old maths PhD at the University of Sydney.</p>
 			<p>Email: ross@rossogilvie.id.au</p>
 		</div>
 		<div class="links">
