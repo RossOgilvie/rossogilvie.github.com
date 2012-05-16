@@ -1,0 +1,15 @@
+<html>
+<head>
+<script type="text/javascript">
+  var query = window.location.search;
+  // Skip the leading ?, which should always be there,
+  // but be careful anyway
+  if (query.substring(0, 1) == '?') {
+    query = query.substring(1);
+  }
+  
+window.location = "http://dl.dropbox.com/u/1298248/"+query;
+</script>
+</head>
+</html>
+
