@@ -44,7 +44,7 @@
 div.profile-head
 {
 	font-size:72px;
-	font-family: "voluta-script-pro",sans-serif;
+	font-family: "Italianno",cursive;
 }
 div.bio
 {
@@ -53,30 +53,27 @@ div.bio
 }
 
     </style>
-	
-	<script type="text/javascript" src="http://use.typekit.com/ewe5aif.js"></script>
-	<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+	<link href='http://fonts.googleapis.com/css?family=Italianno' rel='stylesheet' type='text/css'>
+
 	<script type="text/javascript">
 	function setBday() {
 		var birthday = new Date("6/19/1989");
 		var today = new Date();
 		var years = today.getFullYear() - birthday.getFullYear();
 
-		// Reset birthday to the current year.
-		birthday.setFullYear(today.getFullYear());
-
-		// If the user's birthday has not occurred yet this year, subtract 1.
-		if (today < birthday)
-		{
+		//correct for if my birthday has not happened yet
+		var m = today.getMonth() - birthday.getMonth();
+		if (m < 0 || (m === 0 && today.getDate() < birthday.getDate())) {
 			years--;
 		}
-		
+
+		//alert(years);
 		//change my age in the document
 		document.getElementById('age').innerHTML = years;
 		}
 	</script>
 </head>
-<body>
+<body onLoad="setBday();">
 <div id="background">
 <img src="background.jpg" class="stretch" alt="" />
 <!-- profile -->
@@ -84,7 +81,7 @@ div.bio
 	<div class="profile">
 		<div class="profile-head">Ross Ogilvie</div>
 		<div class="bio">
-			<p>A <span id="age" onLoad="setBday();">22</span> year old maths PhD at the University of Sydney.</p>
+			<p>A <span id="age">23</span> year old maths PhD at the University of Sydney.</p>
 			<p>Email: ross@rossogilvie.id.au</p>
 		</div>
 		<div class="links">
