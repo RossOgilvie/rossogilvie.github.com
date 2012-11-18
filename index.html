@@ -23,7 +23,7 @@ function setBday() {
 	document.getElementById('age').innerHTML = years;
 	}
 
-//$('#background_hi_res').ready(function(){$('#background_lo_res').fadeOut('slow');});
+$('#background_hi_res').ready(function(){$('#background_lo_res').fadeOut('slow');});
 </script>
 
 <link href='http://fonts.googleapis.com/css?family=Italianno' rel='stylesheet' type='text/css'>
@@ -39,43 +39,39 @@ function setBday() {
 	}
 
 	#background_lo_res {
+		z-index: -1;
 		background: url(background_lo_res.jpg);
 		background-size: cover;
 		background-position: top right;
 	}
 	
 	#background_hi_res {
+		z-index: -2;
 		background: url(background.jpg);
 		background-size: cover;
 		background-position: top right;
 	}
 
-	div.profilebox {
-		position:fixed;
+	#profile
+	{
+		float:left;
 		width: 400px;
 		height: 220px;
-		top: 30px;
-		left:  50px;
-		background-color: #000000;
-		border-radius:10px;
-		opacity:0.6;
-		filter:alpha(opacity=60); /* For IE8 and earlier */
-	}
-
-	div.profile {
-		position:fixed;
-		width: 400px;
-		/*height: 180px;*/
-		top: 30px;
-		left:  60px;
+		margin-top: 30px;
+		margin-left:  50px;
+		
+		background: rgba(0,0,0,0.6);
 		color: white;
+
+		border-radius:10px;
+		padding: 10px;
 	}
-	div.profile-head
+	#profile-head
 	{
 		font-size:72px;
 		font-family: "Italianno",cursive;
 	}
-	div.bio
+	#bio
 	{
 		font-size:14px;
 		font-family: sans-serif;
@@ -87,14 +83,13 @@ function setBday() {
 <div id="background_hi_res" class="background"></div>
 <div id="background_lo_res" class="background"></div>
 <!-- profile -->
-<div class="profilebox"></div>
-<div class="profile">
-	<div class="profile-head">Ross Ogilvie</div>
-	<div class="bio">
+<div id="profile">
+	<div id="profile-head">Ross Ogilvie</div>
+	<div id="bio">
 		<p>A <span id="age">23</span> year old maths PhD at the University of Sydney.</p>
 		<p>Email: ross@rossogilvie.id.au</p>
 	</div>
-	<div class="links">
+	<div id="links">
 		<p>
 			<a href="mailto:ross@rossogilvie.id.au"><img src="gmail.png" height="30" width="30" /></a>
 			<a href="http://www.maths.usyd.edu.au/ut/people?who=RB_Ogilvie"><img src="usyd.jpg" height="30" width="30" /></a>
