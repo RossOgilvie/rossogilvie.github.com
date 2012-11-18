@@ -1,9 +1,14 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" 
-   "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head profile="http://www.w3.org/2005/10/profile">
-	
-<meta content="text/html; charset=UTF-8" http-equiv="content-type" />
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="description" content="Ross Ogilvie is maths postgrad in Sydney, Australia.">
+<meta name="author" content="Ross Ogilvie">
+<meta name='robots' content='index, follow'>
+<meta name='geo.placename' content='Australia'>
+<meta name='expires' content='never'>
+<meta name='target' content='global'>
+
 <title>Ross Ogilvie</title>
 
 <script type="text/javascript" src="http://code.jquery.com/jquery-1.8.3.min.js"></script>
@@ -21,7 +26,7 @@ function setBday() {
 
 	//alert(years);
 	//change my age in the document
-	document.getElementById('age').innerHTML = years;
+	$('#age').html(years);
 	}
 
 function background_load()
@@ -70,6 +75,9 @@ function background_load()
 		border-radius:10px;
 		padding: 10px;
 	}
+	
+	header, nav { display:block; }
+	
 	#profile-head
 	{
 		font-size:72px;
@@ -88,17 +96,17 @@ function background_load()
 <div id="background_lo_res" class="background"></div>
 <!-- profile -->
 <div id="profile">
-	<div id="profile-head">Ross Ogilvie</div>
+	<header id="profile-head">Ross Ogilvie</header>
 	<div id="bio">
-		<p>A <span id="age">23</span> year old maths PhD at the University of Sydney.</p>
+		<p>A <span id="age">23</span> year old maths postgrad at the University of Sydney.</p>
 		<p>Email: ross@rossogilvie.id.au</p>
 	</div>
-	<div id="links">
+	<nav id="links">
 		<p>
-			<a href="mailto:ross@rossogilvie.id.au"><img src="gmail.png" height="30" width="30"alt="gmail" /></a>
-			<a href="http://www.maths.usyd.edu.au/ut/people?who=RB_Ogilvie"><img src="usyd.jpg" height="30" width="30" alt="usyd" /></a>
+			<a href="mailto:ross@rossogilvie.id.au"><img src="gmail.png" height="30" width="30" alt="gmail" /></a>
+			<a href="http://www.maths.usyd.edu.au/ut/people?who=RB_Ogilvie"><img src="usyd.png" height="30" width="30" alt="usyd" /></a>
 			<a href="http://www.facebook.com/ross.ogilvie"><img src="facebook.png" height="30" width="30" alt="facebook" /></a>
-			<a href="https://twitter.com/#!/Ross_Ogilvie"><img src="twitter.png" height="30" width="30" alt="twitter" /></a>
+			<a href="https://twitter.com/#!/Ross_Ogilvie"><img src="lala.png" height="30" width="30" alt="twitter" /></a>
 			<a href="https://github.com/RossOgilvie"><img src="github.png" height="30" width="30" alt="github" /></a>
 		</p>
 	</div>
