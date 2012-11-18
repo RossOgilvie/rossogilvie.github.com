@@ -1,7 +1,7 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html>
 <head profile="http://www.w3.org/2005/10/profile">
-<!-- TODO change fav icon-->
+
     <meta content="text/html; charset=UTF-8" http-equiv="content-type">
     <title>Ross Ogilvie</title>
 	<style type="text/css">
@@ -9,16 +9,14 @@
 			width: 100%; 
 			height: 100%; 
 			position: absolute;
-			overflow: hidden;			
-			left: 0px; 
-			top: 0px; 
+			overflow: hidden;
 			z-index: 0;
-		}
-
-		.stretch {
-		/*picture is 1600x1067 */
-			width:100%;
-			height:100%;
+			top:0;
+			right:0;
+			float:right;
+			background:url(background_lo_res.jpg);
+			background-size: cover;
+			background-position: top right;
 		}
 
 		div.profilebox {
@@ -40,18 +38,17 @@
 			top: 30px;
 			left:  60px;
 			color: white;
-}
-div.profile-head
-{
-	font-size:72px;
-	font-family: "Italianno",cursive;
-}
-div.bio
-{
-	font-size:14px;
-	font-family: sans-serif;
-}
-
+		}
+		div.profile-head
+		{
+			font-size:72px;
+			font-family: "Italianno",cursive;
+		}
+		div.bio
+		{
+			font-size:14px;
+			font-family: sans-serif;
+		}
     </style>
 	<link href='http://fonts.googleapis.com/css?family=Italianno' rel='stylesheet' type='text/css'>
 
@@ -71,11 +68,23 @@ div.bio
 		//change my age in the document
 		document.getElementById('age').innerHTML = years;
 		}
+
+	function background_load()
+	{
+		var fullres = new Image();
+
+		fullres.onload = function() {
+			document.getElementById('background').style.backgroundImage = "url(background.jpg)";
+		}
+
+		fullres.src = "background.jpg";
+	}
+
+	background_load();
 	</script>
 </head>
 <body onLoad="setBday();">
-<div id="background">
-<img src="background.jpg" class="stretch" alt="" />
+<div id="background" />
 <!-- profile -->
 	<div class="profilebox"></div>
 	<div class="profile">
@@ -95,6 +104,5 @@ div.bio
 		</div>
 	</div>
 <!-- /profile -->
-</div>
 </body>
 </html>
