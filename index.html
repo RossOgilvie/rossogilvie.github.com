@@ -2,107 +2,111 @@
 <html>
 <head profile="http://www.w3.org/2005/10/profile">
 
-    <meta content="text/html; charset=UTF-8" http-equiv="content-type">
-    <title>Ross Ogilvie</title>
-	<style type="text/css">
-		#background {
-			width: 100%; 
-			height: 100%; 
-			position: absolute;
-			overflow: hidden;
-			z-index: 0;
-			top:0;
-			right:0;
-			float:right;
-			background:url(background_lo_res.jpg);
-			background-size: cover;
-			background-position: top right;
-		}
+<meta content="text/html; charset=UTF-8" http-equiv="content-type">
+<title>Ross Ogilvie</title>
 
-		div.profilebox {
-			position:fixed;
-			width: 400px;
-			height: 220px;
-			top: 30px;
-			left:  50px;
-			background-color: #000000;
-			border-radius:10px;
-			opacity:0.6;
-			filter:alpha(opacity=60); /* For IE8 and earlier */
-		}
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.8.3.min.js"></script>
+<script type="text/javascript">
+function setBday() {
+	var birthday = new Date("6/19/1989");
+	var today = new Date();
+	var years = today.getFullYear() - birthday.getFullYear();
 
-		div.profile {
-			position:fixed;
-			width: 400px;
-			/*height: 180px;*/
-			top: 30px;
-			left:  60px;
-			color: white;
-		}
-		div.profile-head
-		{
-			font-size:72px;
-			font-family: "Italianno",cursive;
-		}
-		div.bio
-		{
-			font-size:14px;
-			font-family: sans-serif;
-		}
-    </style>
-	<link href='http://fonts.googleapis.com/css?family=Italianno' rel='stylesheet' type='text/css'>
-
-	<script type="text/javascript">
-	function setBday() {
-		var birthday = new Date("6/19/1989");
-		var today = new Date();
-		var years = today.getFullYear() - birthday.getFullYear();
-
-		//correct for if my birthday has not happened yet
-		var m = today.getMonth() - birthday.getMonth();
-		if (m < 0 || (m === 0 && today.getDate() < birthday.getDate())) {
-			years--;
-		}
-
-		//alert(years);
-		//change my age in the document
-		document.getElementById('age').innerHTML = years;
-		}
-
-	function background_load()
-	{
-		var fullres = new Image();
-
-		fullres.onload = function() {
-			document.getElementById('background').style.backgroundImage = "url(background.jpg)";
-		}
-
-		fullres.src = "background.jpg";
+	//correct for if my birthday has not happened yet
+	var m = today.getMonth() - birthday.getMonth();
+	if (m < 0 || (m === 0 && today.getDate() < birthday.getDate())) {
+		years--;
 	}
 
-	background_load();
-	</script>
+	//alert(years);
+	//change my age in the document
+	document.getElementById('age').innerHTML = years;
+	}
+
+function background_load()
+{
+	var fullres = new Image();
+
+	fullres.onload = function() {
+		$('#background').fadeIn('slow');
+		$('#background').css('backgroundImage', 'url(background.jpg)' );
+	}
+
+	fullres.src = "background.jpg";
+}
+
+background_load();
+</script>
+
+<link href='http://fonts.googleapis.com/css?family=Italianno' rel='stylesheet' type='text/css'>
+<style type="text/css">
+	#background {
+		width: 100%; 
+		height: 100%; 
+		position: absolute;
+		overflow: hidden;
+		z-index: 0;
+		top:0;
+		right:0;
+		float:right;
+		background: url(background_lo_res.jpg);
+		background-size: cover;
+		background-position: top right;
+	}
+
+	div.profilebox {
+		position:fixed;
+		width: 400px;
+		height: 220px;
+		top: 30px;
+		left:  50px;
+		background-color: #000000;
+		border-radius:10px;
+		opacity:0.6;
+		filter:alpha(opacity=60); /* For IE8 and earlier */
+	}
+
+	div.profile {
+		position:fixed;
+		width: 400px;
+		/*height: 180px;*/
+		top: 30px;
+		left:  60px;
+		color: white;
+	}
+	div.profile-head
+	{
+		font-size:72px;
+		font-family: "Italianno",cursive;
+	}
+	div.bio
+	{
+		font-size:14px;
+		font-family: sans-serif;
+	}
+</style>
 </head>
+
 <body onLoad="setBday();">
 <div id="background" />
 <!-- profile -->
-	<div class="profilebox"></div>
-	<div class="profile">
-		<div class="profile-head">Ross Ogilvie</div>
-		<div class="bio">
-			<p>A <span id="age">23</span> year old maths PhD at the University of Sydney.</p>
-			<p>Email: ross@rossogilvie.id.au</p>
-		</div>
-		<div class="links">
-			<p>
-				<a href="mailto:ross@rossogilvie.id.au"><img src="gmail.png" height="30" width="30" /></a>
-				<a href="http://www.maths.usyd.edu.au/ut/people?who=RB_Ogilvie"><img src="usyd.jpg" height="30" width="30" /></a>
-				<a href="http://www.facebook.com/ross.ogilvie"><img src="facebook.png" height="30" width="30" /></a>
-				<a href="https://twitter.com/#!/Ross_Ogilvie"><img src="twitter.png" height="30" width="30" /></a>
-				<a href="https://github.com/RossOgilvie"><img src="github.png" height="30" width="30" /></a>
-			</p>
-		</div>
+<div class="profilebox"></div>
+<div class="profile">
+	<div class="profile-head">Ross Ogilvie</div>
+	<div class="bio">
+		<p>A <span id="age">23</span> year old maths PhD at the University of Sydney.</p>
+		<p>Email: ross@rossogilvie.id.au</p>
 	</div>
+	<div class="links">
+		<p>
+			<a href="mailto:ross@rossogilvie.id.au"><img src="gmail.png" height="30" width="30" /></a>
+			<a href="http://www.maths.usyd.edu.au/ut/people?who=RB_Ogilvie"><img src="usyd.jpg" height="30" width="30" /></a>
+			<a href="http://www.facebook.com/ross.ogilvie"><img src="facebook.png" height="30" width="30" /></a>
+			<a href="https://twitter.com/#!/Ross_Ogilvie"><img src="twitter.png" height="30" width="30" /></a>
+			<a href="https://github.com/RossOgilvie"><img src="github.png" height="30" width="30" /></a>
+		</p>
+	</div>
+</div>
 <!-- /profile -->
 </body>
 </html>
