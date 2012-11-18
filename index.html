@@ -23,7 +23,10 @@ function setBday() {
 	document.getElementById('age').innerHTML = years;
 	}
 
-$('#background_hi_res').ready(function(){$('#background_lo_res').fadeOut('slow');});
+function background_load()
+{
+	$('#background_hi_res').ready(function(){$('#background_lo_res').fadeOut('slow');});
+}
 </script>
 
 <link href='http://fonts.googleapis.com/css?family=Italianno' rel='stylesheet' type='text/css'>
@@ -31,11 +34,11 @@ $('#background_hi_res').ready(function(){$('#background_lo_res').fadeOut('slow')
 	.background {
 		width: 100%; 
 		height: 100%; 
-		position: absolute;
 		overflow: hidden;
+		
+		position:absolute;
 		top:0;
 		right:0;
-		float:right;
 	}
 
 	#background_lo_res {
@@ -79,7 +82,7 @@ $('#background_hi_res').ready(function(){$('#background_lo_res').fadeOut('slow')
 </style>
 </head>
 
-<body onLoad="setBday();">
+<body onLoad="setBday();background_load();">
 <div id="background_hi_res" class="background"></div>
 <div id="background_lo_res" class="background"></div>
 <!-- profile -->
