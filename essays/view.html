@@ -1,0 +1,27 @@
+<html><head>
+<title>fancu bridi mekso</title>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+	tex2jax: {inlineMath: [['$','$']]},
+	"HTML-CSS": {imageFont:null}
+});
+</script>
+<script type="text/javascript"  src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+</script>
+<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+<script type="text/javascript" src="js/jquery-1.8.2.min.js"></script>
+<script type="text/javascript" src="js/marked.js"></script>
+<link rel="stylesheet" href="markdown.css">
+<script type="text/javascript">
+var hash = window.location.hash.slice(1);
+$.get(hash, function(data) {
+	var text=marked(data);
+	$('#content').html(text);
+},"html");
+</script>
+</head>
+<body>
+	<div id="content"></div>
+</body>
+</html>
