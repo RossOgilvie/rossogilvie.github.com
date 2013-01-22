@@ -1,0 +1,35 @@
+<html><head>
+<title>dynamic viewing</title>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+	tex2jax: {inlineMath: [['$','$']]},
+	"HTML-CSS": {imageFont:null}
+});
+</script>
+<script type="text/javascript"  src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+<script type="text/javascript" src="js/marked.js"></script>
+
+<link rel="stylesheet" href="css/markdown.css">
+<script type="text/javascript">
+var auto_load_toc = false;
+
+$(document).ready(function() {
+	var hash = window.location.hash.slice(1);
+	$.get("source/" + hash + ".md", function(data) {
+		var text=marked(data);
+		$('#content').html(text);
+		make_toc();
+	},"html");
+});
+</script>
+<script src="js/sidebar.js"></script>
+</head>
+<body>
+	<div id="content">
+	</div>
+<footer>
+By Ross Ogilvie :: <a href="index.html">Essays</a> :: <a href="http://rossogilvie.id.au">rossogilvie.id.au</a> :: ross@rossogilvie.id.au
+</footer>
+</body></html>
