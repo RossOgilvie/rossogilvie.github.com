@@ -11,7 +11,6 @@
 
 <title>Ross Ogilvie</title>
 
-<script type="text/javascript" src="http://code.jquery.com/jquery-1.8.3.min.js"></script>
 <script type="text/javascript">
 function setBday() {
 	var birthday = new Date("6/19/1989");
@@ -28,11 +27,6 @@ function setBday() {
 	//change my age in the document
 	$('#age').html(years);
 	}
-
-function background_load()
-{
-	$('#background_hi_res').ready(function(){$('#background_lo_res').fadeOut('slow');});
-}
 </script>
 
 <link href='http://fonts.googleapis.com/css?family=Italianno' rel='stylesheet' type='text/css' />
@@ -45,20 +39,11 @@ function background_load()
 		position:absolute;
 		top:0;
 		right:0;
-	}
-
-	#background_lo_res {
-		z-index: -1;
-		background: url(background_lo_res.jpg);
-		background-size: cover;
-		background-position: top right;
-	}
-	
-	#background_hi_res {
-		z-index: -2;
+		
 		background: url(background.jpg);
 		background-size: cover;
 		background-position: top right;
+		z-index: -1;
 	}
 
 	#profile
@@ -92,8 +77,7 @@ function background_load()
 </head>
 
 <body onload="setBday();background_load();">
-<div id="background_hi_res" class="background"></div>
-<div id="background_lo_res" class="background"></div>
+<div class="background"></div>
 <!-- profile -->
 <div id="profile">
 	<header id="profile-head">Ross Ogilvie</header>
