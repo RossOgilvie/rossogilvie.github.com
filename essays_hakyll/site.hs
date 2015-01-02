@@ -3,7 +3,8 @@
 import           Data.Monoid ((<>))
 import           Hakyll
 
-import           System.FilePath.Posix (takeBaseName)
+import           System.FilePath.Posix (takeBaseName, (</>), takeDirectory, splitFileName)
+import  Data.List(isInfixOf)
 
 import qualified Data.Set as S
 import qualified Data.Map as M
@@ -24,11 +25,12 @@ main = hakyll $ do
         compile compressCssCompiler
 
     match "posts/*" $ do
-        route $ niceRoute
+        route $ postRoute
         compile $ pandocCompilerWith defaultHakyllReaderOptions pandocOptions
             >>= loadAndApplyTemplate "templates/post.html"    postCtx
             >>= loadAndApplyTemplate "templates/default.html" (mathCtx <> defaultContext)
             >>= relativizeUrls
+            >>= removeIndexHtml
 
     match "index.html" $ do
         route idRoute
@@ -44,6 +46,7 @@ main = hakyll $ do
                 >>= applyAsTemplate indexCtx
                 >>= loadAndApplyTemplate "templates/default.html" indexCtx
                 >>= relativizeUrls
+                >>= removeIndexHtml
 
 
 
@@ -53,12 +56,21 @@ postCtx =
     dateField "date" "%B %e, %Y" <>
     defaultContext
 
-niceRoute :: Routes
-niceRoute =
+postRoute :: Routes
+postRoute =
     gsubRoute "posts/" (const "") `composeRoutes`
     gsubRoute "/[0-9]{4}-[0-9]{2}-[0-9]{2}-" (const "/") `composeRoutes`
-    setExtension ""
+    customRoute (\st -> let p=toFilePath st in takeDirectory p </> takeBaseName p </> "index.html")
 
+-- replace url of the form foo/bar/index.html by foo/bar
+removeIndexHtml :: Item String -> Compiler (Item String)
+removeIndexHtml item = return $ fmap (withUrls removeIndexStr) item
+    where
+        removeIndexStr :: String -> String
+        removeIndexStr url = case splitFileName url of
+            (dir, "index.html") | not (isInfixOf "://" dir) -> dir
+            _ -> url
+            
 pandocOptions :: WriterOptions
 pandocOptions = defaultHakyllWriterOptions {writerExtensions = newExtensions, writerHTMLMathMethod = MathJax "http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"}
     where

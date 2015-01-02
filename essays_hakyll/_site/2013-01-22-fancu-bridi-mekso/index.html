@@ -4,7 +4,7 @@
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
   <title>Ross Ogilvie - The Sad State of Mex</title>
-  <link rel="stylesheet" type="text/css" href="./css/default.css" />
+  <link rel="stylesheet" type="text/css" href="../css/default.css" />
   
 </head>
 
@@ -12,7 +12,7 @@
   <div id="header">
     <div id="navigation">
       <a href="http://rossogilvie.id.au">Front</a>
-      <a href="./">Index</a>
+      <a href="../">Index</a>
     </div>
   </div>
 
@@ -182,7 +182,7 @@ ax^2 + bx + c = 0 \Leftrightarrow x = \frac{-b \pm \sqrt{b^2 - 4ac}}{2a}
 <p>With these tools to build lists of things, we could now describe a useful list that we may want to take the product of. But allow me to introduce the more general notion of a fold. The idea is to take a list, and combine all the elements together, to reduce it down to a single number. Typically folds are called left or right depending whether they group the list elements left or right associatively. For example</p>
 <p><span class="math">\[
 \begin{align*}
-left\_fold \quad addition\quad [1,2,3,4]
+left\_fold \quad&amp; addition\quad [1,2,3,4]\\
 &amp;= left\_fold \quad addition\quad [1+2,3,4] \\
 &amp;= left\_fold \quad addition\quad [(1+2)+3,4] \\
 &amp;= ((1+2)+3)+4
