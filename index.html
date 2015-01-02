@@ -11,25 +11,6 @@
 
 <title>Ross Ogilvie</title>
 
-<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
-<script type="text/javascript">
-function setBday() {
-	var birthday = new Date("6/19/1989");
-	var today = new Date();
-	var years = today.getFullYear() - birthday.getFullYear();
-
-	//correct for if my birthday has not happened yet
-	var m = today.getMonth() - birthday.getMonth();
-	if (m < 0 || (m === 0 && today.getDate() < birthday.getDate())) {
-		years--;
-	}
-
-	//alert(years);
-	//change my age in the document
-	$('#age').html(years);
-	}
-</script>
-
 <link href='http://fonts.googleapis.com/css?family=Italianno' rel='stylesheet' type='text/css' />
 <style type="text/css">
 	.background {
@@ -77,23 +58,23 @@ function setBday() {
 </style>
 </head>
 
-<body onload="setBday();background_load();">
+<body>
 <div class="background"></div>
 <!-- profile -->
 <div id="profile">
 	<header id="profile-head">Ross Ogilvie</header>
 	<div id="bio">
-		<p>A <span id="age">25</span> year old maths postgrad at the University of Sydney.</p>
+		<p>A maths postgrad and teaching fellow at the University of Sydney.</p>
 		<p>Email: ross@rossogilvie.id.au</p>
 	</div>
 	<nav id="links">
 		<p>
-			<a href="mailto:ross@rossogilvie.id.au"><img src="gmail.png" height="30" width="30" alt="gmail" /></a>
-			<a href="http://rossogilvie.id.au/essays/"><img src="essays.png" height="30" width="30" alt="essays" /></a>
+			<a href="mailto:ross@rossogilvie.id.au"><img src="gmail.png" height="33" width="30" alt="gmail" /></a>
 			<a href="http://www.maths.usyd.edu.au/ut/people?who=RB_Ogilvie"><img src="usyd.png" height="30" width="30" alt="usyd" /></a>
-			<a href="http://www.facebook.com/ross.ogilvie"><img src="facebook.png" height="30" width="30" alt="facebook" /></a>
-			<!-- <a href="https://twitter.com/#!/Ross_Ogilvie"><img src="lala.png" height="30" width="30" alt="twitter" /></a> -->
+			<a href="http://www.facebook.com/ross.ogilvie"><img src="facebook.png" height="30" width="30" /></a>
+			<a href="http://www.last.fm/user/Ross_Ogilvie"><img src="lastfm.png" height="29" width="29" alt="lastfm" /></a>
 			<a href="https://github.com/RossOgilvie"><img src="github.png" height="30" width="30" alt="github" /></a>
+			<a href="http://rossogilvie.id.au/essays/"><img src="essays.png" height="30" width="30" alt="essays" /></a>
 		</p>
 	</div>
 </div>
