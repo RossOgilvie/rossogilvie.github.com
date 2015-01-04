@@ -1,5 +1,0 @@
-#!/bin/zsh
-
-git add .
-git commit -m "Posts updated: $(date)"
-git push origin master
