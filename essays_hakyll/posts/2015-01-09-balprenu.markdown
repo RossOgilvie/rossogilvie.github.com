@@ -4,10 +4,7 @@ author: Ross
 published: 2014-01-09
 ---
 
-## balprenu
-
-fanva zoi gy Someone Great gy
-
+fanva zoi gy Someone Great gy  <br />
 fi'e la'o gy LCD Soundsystem gy
 
 ka'e aunai e'i casnu <br />
