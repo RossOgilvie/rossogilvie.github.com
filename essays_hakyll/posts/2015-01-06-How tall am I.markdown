@@ -1,7 +1,7 @@
 ---
 title: How tall am I?
 author: Ross
-published: 2014-01-06
+published: 2015-01-06
 mathjax: on
 ---
 
@@ -15,13 +15,13 @@ All this back of the envelope stuff got me wondering would I be able to measure 
 
 A short digression. I would have to measure myself in sand. Then divide in that interval in half to get 89 cm. Then add a centimetre (the width of my fingernail) and third it twice to get 10cm. Then 10cm plus the 90 cm is a metre rule, with 10 cm increments easily added. A quick google just showed me a technique to equally divide a segment into any number of pieces based on making your segment the transverse of two equally divided parallel lines and joining the intervals on the parallel lines.
 
-Next up is mass. Easy, 1 cubic centimeter of water weighs 1 gram. The physics definitions of time would be a little beyond my ability to measure, having no Cs atoms or sensitive laser apparatus. But I think g = 9.8 $m/s^2$ would cut it. One second is the time for a rock to fall 4.9 m. If I was really bored on the island, I would figure out the pendulum equations and do it that was, since then I would have a timer rather than a one off event.
+Next up is mass. Easy, 1 cubic centimeter of water weighs 1 gram. The physics definitions of time would be a little beyond my ability to measure, having no Cs atoms or sensitive laser apparatus. But I think g = 9.8 $m/s^2$ would cut it. One second is the time for a rock to fall 4.9 m. If I was really bored on the island, I would figure out the pendulum equations and do it that way, since then I would have a timer rather than a one off event.
 
 Temperature is both simple and hard. Obviously water freezes at 0 degrees Celsius and boils at 100. But how do you divide that interval? I think I would have to use Newton's law of cooling if I didn't have a vat of mercury around (desert island vs time travel scenario), but then I would need to know the ambient temperature that the water was approaching. One kelvin increment is the same as a degree Celsius, and it starts at absolute zero.
 
 At this point, I realised I had no idea how to start on the electric units; all I remembered was something about a flow of some metal to define the ampere. And so looked it up. An early realisation had it pegged as "the current that would deposit 0.001118000 grams of silver per second from a silver nitrate solution". This is when I came across the news that there is a [proposal](https://en.wikipedia.org/wiki/Proposed_redefinition_of_SI_base_units) to overhaul the SI system, redefining the ampere and more significantly the kilogram.
 
-I say more significantly the kilogram, because it is the only base unit still defined by an artifact. Despite what I said about a millilitre of water, the standard is actually a metal cyclinder in a room in France. Madness. Moreover, there were replicas to be other made and periodically they cross check them for drift. There has been drift, but looking at the chart on wiki just now, I see that's it's only been on the scale of tens of parts per billion, which is comparable to the maximum possible accuracy of the other units. But it has the draw back of you can't calibrate your private lab.
+I say more significantly the kilogram, because it is the only base unit still defined by an artifact. Despite what I said about a millilitre of water, the standard is actually a metal cylinder in a room in France. Madness. Moreover, there were replicas to be other made and periodically they cross check them for drift. There has been drift, but looking at the chart on wiki just now, I see that's it's only been on the scale of tens of parts per billion, which is comparable to the maximum possible accuracy of the other units. But it has the draw back of you can't calibrate your private lab.
 
 Anyway, they're going to fix the kilogram by declaring a value for the Planck constant, which says how much energy a photon of a particular frequency has. It is currently known to an accuracy 100x greater than the kilograms' drifts. The ampere is to be defined by fixing a value for the fundamental electric charge (but doesn't that make the coulomb primary?), and the kelvin is to be defined by fixing the Boltzmann constant. The latter because apparently the triple point of water definition is unwieldy outside a narrow range of temperatures, and in some fundamental sense, temperature is just an expression of energy anyway.
 

@@ -1,7 +1,7 @@
 ---
 title: Getting started with Hakyll
 author: Ross
-published: 2014-01-04
+published: 2015-01-04
 ---
 
 So a new year and a new resolution; to write something everyday. So far I've failed thrice, which is about par for the course. I blame setting things up in Hakyll. It was far more painful than I expected, which explains why so many Hakyll blogs are super close to default/ each other.
