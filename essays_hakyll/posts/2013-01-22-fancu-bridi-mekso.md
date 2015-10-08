@@ -56,7 +56,7 @@ fy fancu fo li xy te'a ny
 
 Is this an exponential, some power of $x$, or a function of two variables (in which order?)? How are you supposed to specify?  We may try to look to high school mathematics for some guidance. These three would be respectively written
 $$
-f(n) = x^n,\, f(n) = x^n,\, f(x,n) = x^n
+f(x) = x^n,\, f(n) = x^n,\, f(x,n) = x^n
 $$
 
 Alright so that settles it then, just write it like maths does. The third option would be
