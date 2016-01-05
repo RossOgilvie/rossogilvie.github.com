@@ -1,0 +1,7 @@
+In one sentence, the project builds from site.hs an exe that generates the static site in _site.
+If you just want to add new posts, use the preview and go-live scripts.
+build-site is a link to the built binary.
+
+The source material is link to with posts_markdown.
+
+The generated site is a directory with an index, and one folder per post with an index.html in each folder. Then I can get around showing file extentions (one uses the url of the folder, which loads the index implicitly).
