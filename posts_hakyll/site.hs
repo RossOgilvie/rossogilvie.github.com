@@ -10,10 +10,6 @@ import qualified Data.Set as S
 import qualified Data.Map as M
 import           Text.Pandoc.Options
 
-
-posts_src_folder = "posts_markdown"
-posts_dest_folder = "posts"
-
 --------------------------------------------------------------------------------
 main :: IO ()
 main = hakyll $ do
