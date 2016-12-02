@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8" />
-<meta name="description" content="Ross Ogilvie is maths postgrad in Sydney, Australia.">
+<meta name="description" content="Ross Ogilvie is mathematics graduate student at the University of Sydney.">
 <meta name="author" content="Ross Ogilvie">
 <meta name='robots' content='index, follow'>
 <meta name='geo.placename' content='Australia'>
@@ -22,10 +22,19 @@
 		top:0;
 		right:0;
 
-		background: url(background.jpg);
+		background-image: url(background_ski.jpg);
+		/*background-image: url(background_moduli.png);*/
 		background-size: cover;
-		background-position: top right;
+		background-position: center center;
+		background-repeat: no-repeat;
+		background-attachment: fixed;
 		z-index: -1;
+
+		-webkit-transition: background 1.5s ease-in-out;
+		-moz-transition: background 1.5s ease-in-out;
+		-o-transition: background 1.5s ease-in-out;
+		-ms-transition: background 1.5s ease-in-out;
+		transition: background 1.5s ease-in-out;
 	}
 
 	#profile
@@ -56,6 +65,30 @@
 		font-family: sans-serif;
 	}
 </style>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+ <script>
+var bgImageArray = ["background_ski.jpg", "background_moduli.png"],
+secs = 3;
+// bgImageArray.forEach(function(img){
+//     new Image().src = img;
+//     // caches images, avoiding white flash between background replacements
+// });
+
+function backgroundSequenceNormal() {
+	window.clearTimeout();
+	for (var k = 0; k < bgImageArray.length; k++) {
+		doSetTimeout(k);
+	}
+	setTimeout(function() { backgroundSequenceNormal() }, secs * 1000*bgImageArray.length);
+}
+
+function doSetTimeout(k) {
+setTimeout(function(){
+	$(".background").css('background-image', 'url(' + bgImageArray[k] +') ');
+}, secs * 1000 * k);
+}
+</script>
 </head>
 
 <body>
@@ -64,20 +97,23 @@
 <div id="profile">
 	<header id="profile-head">Ross Ogilvie</header>
 	<div id="bio">
-		<p>A maths postgrad and teaching fellow at the University of Sydney.</p>
+		<p>A mathematics graduate student at the University of Sydney.</p>
 		<p>Email: ross@rossogilvie.id.au</p>
 	</div>
 	<nav id="links">
 		<p>
 			<a href="mailto:ross@rossogilvie.id.au"><img src="gmail.png" height="33" width="30" alt="gmail" /></a>
 			<a href="http://www.maths.usyd.edu.au/ut/people?who=RB_Ogilvie"><img src="usyd.png" height="30" width="30" alt="usyd" /></a>
-			<a href="http://www.facebook.com/ross.ogilvie"><img src="facebook.png" height="30" width="30" alt="facebook" /></a>
-			<a href="http://www.last.fm/user/Ross_Ogilvie"><img src="lastfm.png" height="29" width="29" alt="last.fm" /></a>
+			<!-- <a href="http://www.facebook.com/ross.ogilvie"><img src="facebook.png" height="30" width="30" alt="facebook" /></a> -->
+			<!-- <a href="http://www.last.fm/user/Ross_Ogilvie"><img src="lastfm.png" height="29" width="29" alt="last.fm" /></a> -->
 			<a href="https://github.com/RossOgilvie"><img src="github.png" height="30" width="30" alt="github" /></a>
 			<!-- <a href="essays/"><img src="essays.png" height="30" width="30" alt="essays" /></a> -->
 		</p>
 	</nav>
 </div>
 <!-- /profile -->
+<script>
+// backgroundSequenceNormal();
+</script>
 </body>
 </html>
