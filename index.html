@@ -8,6 +8,7 @@
 <meta name='geo.placename' content='Australia'>
 <meta name='expires' content='never'>
 <meta name='target' content='global'>
+<meta name="viewport" content="width=device-width, initial-scale=1">
 
 <title>Ross Ogilvie</title>
 
@@ -23,27 +24,23 @@
 		right:0;
 
 		background-image: url(background_ski.jpg);
-		/*background-image: url(background_moduli.png);*/
 		background-size: cover;
 		background-position: center center;
 		background-repeat: no-repeat;
 		background-attachment: fixed;
 		z-index: -1;
-
-		-webkit-transition: background 1.5s ease-in-out;
-		-moz-transition: background 1.5s ease-in-out;
-		-o-transition: background 1.5s ease-in-out;
-		-ms-transition: background 1.5s ease-in-out;
-		transition: background 1.5s ease-in-out;
 	}
 
 	#profile
 	{
 		float:left;
-		width: 400px;
-		height: 220px;
+		/*width: 100%;*/
+		/*height: 220px;*/
+		max-width: 450px;
+		min-height: 220px;
 		margin-top: 30px;
 		margin-left:  50px;
+		margin-right:  50px;
 
 		background: rgba(0,0,0,0.6);
 		color: white;
@@ -52,11 +49,17 @@
 		padding: 10px;
 	}
 
+	.icons
+	{
+		width: 40px;
+		height: 40px;
+	}
+
 	header, nav { display:block; }
 
 	#profile-head
 	{
-		font-size:72px;
+		font-size:96px;
 		font-family: "Italianno",cursive;
 	}
 	#bio
@@ -66,27 +69,21 @@
 	}
 </style>
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
- <script>
-var bgImageArray = ["background_ski.jpg", "background_moduli.png"],
-secs = 3;
-// bgImageArray.forEach(function(img){
-//     new Image().src = img;
-//     // caches images, avoiding white flash between background replacements
-// });
+<script>
+// To power a phone icon that shows or hides my phone number.
+var phone_text = "<p>My phone number factors as 2&times;7&times;97&times;263&times;1123.</p>\
+<p>Don't forget the leading prefix (zero or +61).</p>";
+var bio_text = "<p>A mathematics PhD graduate of the University of Sydney.</p>\
+<p>Email: ross@rossogilvie.id.au</p>";
+var phone_show = false;
 
-function backgroundSequenceNormal() {
-	window.clearTimeout();
-	for (var k = 0; k < bgImageArray.length; k++) {
-		doSetTimeout(k);
-	}
-	setTimeout(function() { backgroundSequenceNormal() }, secs * 1000*bgImageArray.length);
+function change_phone() {
+if(!phone_show) {
+	document.getElementById('bio').innerHTML = phone_text;
+} else {
+	document.getElementById('bio').innerHTML = bio_text;
 }
-
-function doSetTimeout(k) {
-setTimeout(function(){
-	$(".background").css('background-image', 'url(' + bgImageArray[k] +') ');
-}, secs * 1000 * k);
+phone_show = !phone_show;
 }
 </script>
 </head>
@@ -97,23 +94,21 @@ setTimeout(function(){
 <div id="profile">
 	<header id="profile-head">Ross Ogilvie</header>
 	<div id="bio">
-		<p>A mathematics graduate student at the University of Sydney.</p>
+		<p>A mathematics PhD graduate of the University of Sydney.</p>
 		<p>Email: ross@rossogilvie.id.au</p>
 	</div>
 	<nav id="links">
 		<p>
-			<a href="mailto:ross@rossogilvie.id.au"><img src="gmail.png" height="33" width="30" alt="gmail" /></a>
-			<a href="http://www.maths.usyd.edu.au/ut/people?who=RB_Ogilvie"><img src="usyd.png" height="30" width="30" alt="usyd" /></a>
-			<!-- <a href="http://www.facebook.com/ross.ogilvie"><img src="facebook.png" height="30" width="30" alt="facebook" /></a> -->
-			<!-- <a href="http://www.last.fm/user/Ross_Ogilvie"><img src="lastfm.png" height="29" width="29" alt="last.fm" /></a> -->
-			<a href="https://github.com/RossOgilvie"><img src="github.png" height="30" width="30" alt="github" /></a>
+			<a href="mailto:ross@rossogilvie.id.au"><img src="email.png" alt="email" class="icons" /></a>
+			<a href="#" onclick="change_phone();"><img src="phone.png" alt="phone" class="icons" /></a>
+			<a href="http://www.maths.usyd.edu.au/ut/people?who=RB_Ogilvie"><img src="usyd.png" alt="usyd" class="icons" /></a>
+			<a href="http://www.facebook.com/ross.ogilvie"><img src="facebook.png" alt="facebook" class="icons" /></a>
+			<a href="https://github.com/RossOgilvie"><img src="github.png" alt="github" class="icons" /></a>
+			<a href="http://www.last.fm/user/Ross_Ogilvie"><img src="lastfm.png" alt="last.fm" class="icons" /></a>
 			<!-- <a href="essays/"><img src="essays.png" height="30" width="30" alt="essays" /></a> -->
 		</p>
 	</nav>
 </div>
 <!-- /profile -->
-<script>
-// backgroundSequenceNormal();
-</script>
 </body>
 </html>
