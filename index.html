@@ -73,24 +73,6 @@
 		color: white;
 	}
 </style>
-
-<script>
-// To power a phone icon that shows or hides my phone number.
-var phone_text = "<p>My phone number factors as 2&times;7&times;97&times;263&times;1123.</p>\
-<p>Don't forget the leading prefix (zero or +61).</p>";
-var bio_text = "<p>A mathematics PhD graduate of the University of Sydney.</p>\
-<p>Email: ross@rossogilvie.id.au</p>";
-var phone_show = false;
-
-function change_phone() {
-if(!phone_show) {
-	document.getElementById('bio').innerHTML = phone_text;
-} else {
-	document.getElementById('bio').innerHTML = bio_text;
-}
-phone_show = !phone_show;
-}
-</script>
 </head>
 
 <body>
@@ -99,9 +81,9 @@ phone_show = !phone_show;
 <div id="profile">
 	<header id="profile-head">Ross Ogilvie</header>
 	<div id="bio">
-		<p>A mathematics PhD graduate of the University of Sydney.</p>
+		<p>A mathematician at the University of Sydney.</p>
 		<p>Email: ross@rossogilvie.id.au</p>
-		<p><a href="http://hdl.handle.net/2123/16475">Thesis</a>, <a href="https://github.com/RossOgilvie/Papers">papers</a>, and <a href="https://github.com/RossOgilvie/Talks">talks</a>.</p>
+		<p><a href="http://hdl.handle.net/2123/16475">Thesis</a>, <a href="https://arxiv.org/search/math?searchtype=author&query=Ogilvie%2C+R">papers</a>, and <a href="https://github.com/RossOgilvie/Talks">talks</a>.</p>
 	</div>
 	<nav id="links">
 		<p>
@@ -111,10 +93,27 @@ phone_show = !phone_show;
 			<a href="http://www.facebook.com/ross.ogilvie"><img src="facebook.png" alt="facebook" class="icons" /></a>
 			<a href="https://github.com/RossOgilvie"><img src="github.png" alt="github" class="icons" /></a>
 			<a href="http://www.last.fm/user/Ross_Ogilvie"><img src="lastfm.png" alt="last.fm" class="icons" /></a>
-			<!-- <a href="essays/"><img src="essays.png" height="30" width="30" alt="essays" /></a> -->
+			<a href="triplej/"><img src="triplej.jpg" alt="triplej" class="icons" /></a>
 		</p>
 	</nav>
 </div>
 <!-- /profile -->
+
+<script>
+// To power a phone icon that shows or hides my phone number.
+var phone_text = "<p>My phone number factors as 2&times;7&times;97&times;263&times;1123.</p>\
+<p>Don't forget the leading prefix (zero or +61).</p>";
+var bio_text = document.getElementById('bio').innerHTML;
+var phone_show = false;
+
+function change_phone() {
+	if (!phone_show) {
+		document.getElementById('bio').innerHTML = phone_text;
+	} else {
+		document.getElementById('bio').innerHTML = bio_text;
+	}
+	phone_show = !phone_show;
+}
+</script>
 </body>
 </html>
