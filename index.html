@@ -55,11 +55,10 @@ body
 	font-size:96px;
 	font-family: "Italianno",cursive;
 }
-
 .profile-box
 {
 	margin: 10px;
-
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .icon
@@ -67,17 +66,31 @@ body
 	width: 40px;
 	height: 40px;
 }
-.bullet
-{
-	width: 20px;
-	height: 20px;
-}
-
-header, nav { display:block; }
 
 a
 {
 	color: white;
+}
+
+ul
+{
+	list-style-type: circle;
+}
+ul .uni
+{
+	list-style-type: none;
+}
+
+
+.collapsible-header 
+{
+	cursor: pointer;
+}
+.collapsible-content 
+{
+	display: none;
+	overflow: hidden;
+	margin-left: 10px;
 }
 </style>
 </head>
@@ -91,17 +104,20 @@ a
 	<h3>Research</h3>
 	<p>My research interests centre on the differential geometry of surfaces; harmonic, constant mean curvature, and Willmore.</p>
 	<!-- <p>The background image is one component of the moduli space of harmonically immersed tori in the 3-sphere. That is, each point represents a harmonic torus.</p> -->
-	<p><a href="mailto:r.ogilvie@math.uni-mannheim.de"><img src="email.png" alt="email" class="bullet" /></a> r.ogilvie@math.uni-mannheim.de</p>
-	<p><a href="https://analysis.math.uni-mannheim.de/de/mitarbeiter/ross-ogilvie/"><img src="mannheim.jpg" alt="mannheim" class="icon" /></a>
-	<a href="http://www.maths.usyd.edu.au/ut/people?who=RB_Ogilvie"><img src="usyd.png" alt="usyd" class="icon" /></a></p>
 	<p><a href="http://hdl.handle.net/2123/16475">Thesis</a>, <a href="https://arxiv.org/search/math?searchtype=author&query=Ogilvie%2C+R">papers</a>, and <a href="https://github.com/RossOgilvie/Talks">talks</a>.</p>
+	<p>
+		<a href="https://analysis.math.uni-mannheim.de/de/mitarbeiter/ross-ogilvie/"><img src="mannheim.jpg" alt="mannheim" class="icon" /></a>
+		<a href="mailto:r.ogilvie@math.uni-mannheim.de"><img src="email.png" alt="email" class="icon" /></a>
+	</p>
+	<!-- <a href="http://www.maths.usyd.edu.au/ut/people?who=RB_Ogilvie"><img src="usyd.png" alt="usyd" class="icon" /></a></p> -->
 </div>
 <div class="profile-box">
-<p><h3>Teaching</h3></p>
+<h3 class="collapsible-header">Teaching +</h3>
+<div class="collapsible-content">
 Unless otherwise noted, these are the tutorials I taught.
 <p>2019</p>
 <ul>
-<li>University of Sydney
+<li class="uni">University of Sydney
 	<ul>
 		<li>MATH1005 Statistics (Summer School)</li>
 		<li>MATH1011 Applications of Calculus (x3)</li>
@@ -109,12 +125,12 @@ Unless otherwise noted, these are the tutorials I taught.
 		<li>MATH1111 Introduction to Calculus (x2)</li>
 	</ul>
 </li>
-<li>University of Notre Dame, Australia
+<li class="uni">University of Notre Dame, Australia
 	<ul>
 		<li>MATH5502 Statistics (Course Instructor)</li>
 	</ul>
 </li>
-<li>Australian Catholic University
+<li class="uni">Australian Catholic University
 <ul>
 	<li>MATH107 Foundations of Mathematics (x2)</li>
 	<li>SCIT101 Science for Technologists (Lecturer for maths component)</li>
@@ -123,7 +139,7 @@ Unless otherwise noted, these are the tutorials I taught.
 </ul>
 <p>2018</p>
 <ul>
-<li>University of Sydney
+<li class="uni">University of Sydney
 	<ul>
 		<li>MATH1004 Discrete Mathematics</li>
 		<li>MATH1064 Discrete Mathematics for Computing</li>
@@ -132,7 +148,7 @@ Unless otherwise noted, these are the tutorials I taught.
 		<li>Mathematics 2U Bridging Course</li>
 	</ul>
 </li>
-<li>Australian Catholic University
+<li class="uni">Australian Catholic University
 <ul>
 	<li>MATH107 Foundations of Mathematics (x2)</li>
 	<li>MATH104 Functions and Calculus (x2)</li>
@@ -141,7 +157,7 @@ Unless otherwise noted, these are the tutorials I taught.
 </ul>
 <p>2017</p>
 <ul>
-<li>University of Sydney
+<li class="uni">University of Sydney
 	<ul>
 		<li>MATH1001 Differential Calculus (Lecturer)</li>
 		<li>MATH1002 Linear Algebra (x2)</li>
@@ -150,7 +166,7 @@ Unless otherwise noted, these are the tutorials I taught.
 		<li>MATH1005 Statistics (x2)</li>
 	</ul>
 </li>
-<li>Australian Catholic University
+<li class="uni">Australian Catholic University
 <ul>
 	<li>MATH107 Foundations of Mathematics (x2)</li>
 	<li>MATH104 Functions and Calculus (x2)</li>
@@ -164,7 +180,7 @@ Unless otherwise noted, these are the tutorials I taught.
 	<li>MATH1002 Linear Algebra (x2)</li>
 	<li>MATH1003 Integral Calculus and Modelling</li>
 	<li>MATH1004 Discrete Mathematics (x3)</li>
-	<li>MATH3968 Differential Geometry (Advanced)</li>
+	<li>MATh3968 Differential Geometry (Advanced)</li>
 	<li>Mathematics 2U Bridging Course</li>
 </ul>
 <p>2015</p>
@@ -177,7 +193,7 @@ Unless otherwise noted, these are the tutorials I taught.
 <ul>
 	<li>MATH1011 Applications of Calculus (Lecturer)</li>
 	<li>MATH1003 Integral Calculus and Modelling (x2)</li>
-	<li>MATH3968 Differential Geometry (Advanced)</li>
+	<li>MATh3968 Differential Geometry (Advanced)</li>
 </ul>
 <p>2013</p>
 <ul>
@@ -199,6 +215,8 @@ Unless otherwise noted, these are the tutorials I taught.
 </ul>
 </div>
 
+</div>
+
 <div class="profile-box">
 	<p><h3>Personal</h3></p>
 	<p>
@@ -210,6 +228,21 @@ Unless otherwise noted, these are the tutorials I taught.
 </div>
 </div>
 
+<script>
+var coll = document.getElementsByClassName("collapsible-header");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+	coll[i].addEventListener("click", function () {
+		this.classList.toggle("active"); 
+		var content = this.nextElementSibling;
+		if (content.style.display === "block") 
+			{ content.style.display = "none"; } 
+		else 
+			{ content.style.display = "block"; }
+	});
+}
+</script>
 
 </body>
 </html>
