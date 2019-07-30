@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8" />
-<meta name="description" content="Ross Ogilvie is mathematician at the University of Sydney.">
+<meta name="description" content="Ross Ogilvie is mathematician at the University of Mannheim.">
 <meta name="author" content="Ross Ogilvie">
 <meta name='robots' content='index, follow'>
 <meta name='geo.placename' content='Australia'>
@@ -12,108 +12,94 @@
 
 <title>Ross Ogilvie</title>
 
-<link href='http://fonts.googleapis.com/css?family=Italianno' rel='stylesheet' type='text/css' />
+<link href="http://fonts.googleapis.com/css?family=Italianno" rel="stylesheet" type="text/css" />
 <style type="text/css">
-	.background {
-		width: 100%;
-		height: 100%;
-		overflow: hidden;
+body 
+{
+	background: url(background_moduli.png); 
+	background-repeat: no-repeat;
+	background-position: center 20%;
+	background-attachment: fixed;
+	background-size: 100% auto;
+}
 
-		position:absolute;
-		top:0;
-		right:0;
+#overleaf
+{ 
+	height: 100%;
+	width: 40%;
+	min-width: 400px;
+	position: fixed;
+	left: 0;
+	top: 0;
+	overflow-x: hidden;
+	overflow-y: hidden;
 
-		background-image: url(background_ski.jpg);
-		background-size: cover;
-		background-position: center center;
-		background-repeat: no-repeat;
-		background-attachment: fixed;
-		z-index: -1;
-	}
+	background-color: black;
+	color: white;
+}
 
-	#profile
-	{
-		float:left;
-		/*width: 100%;*/
-		/*height: 220px;*/
-		max-width: 450px;
-		min-height: 220px;
-		margin-top: 30px;
-		margin-left:  50px;
-		margin-right:  50px;
+#profile-head
+{
+	margin: 10px;
+	font-size:96px;
+	font-family: "Italianno",cursive;
+}
 
-		background: rgba(0,0,0,0.6);
-		color: white;
+.profile-box
+{
+	margin: 10px;
 
-		border-radius:10px;
-		padding: 10px;
-	}
+}
 
-	.icons
-	{
-		width: 40px;
-		height: 40px;
-	}
+.icon
+{
+	width: 40px;
+	height: 40px;
+}
+.bullet
+{
+	width: 20px;
+	height: 20px;
+}
 
-	header, nav { display:block; }
+header, nav { display:block; }
 
-	#profile-head
-	{
-		font-size:96px;
-		font-family: "Italianno",cursive;
-	}
-	#bio
-	{
-		font-size:14px;
-		font-family: sans-serif;
-	}
-	
-	a
-	{
-		color: white;
-	}
+a
+{
+	color: white;
+}
 </style>
 </head>
 
 <body>
-<div class="background"></div>
-<!-- profile -->
-<div id="profile">
-	<header id="profile-head">Ross Ogilvie</header>
-	<div id="bio">
-		<p>A mathematician at the University of Mannheim.</p>
-		<p>Email: ross@rossogilvie.id.au</p>
-		<p><a href="http://hdl.handle.net/2123/16475">Thesis</a>, <a href="https://arxiv.org/search/math?searchtype=author&query=Ogilvie%2C+R">papers</a>, and <a href="https://github.com/RossOgilvie/Talks">talks</a>.</p>
-	</div>
-	<nav id="links">
-		<p>
-			<a href="mailto:ross@rossogilvie.id.au"><img src="email.png" alt="email" class="icons" /></a>
-			<a href="#" onclick="change_phone();"><img src="phone.png" alt="phone" class="icons" /></a>
-			<a href="http://www.maths.usyd.edu.au/ut/people?who=RB_Ogilvie"><img src="usyd.png" alt="usyd" class="icons" /></a>
-			<a href="http://www.facebook.com/ross.ogilvie"><img src="facebook.png" alt="facebook" class="icons" /></a>
-			<a href="https://github.com/RossOgilvie"><img src="github.png" alt="github" class="icons" /></a>
-			<a href="http://www.last.fm/user/Ross_Ogilvie"><img src="lastfm.png" alt="last.fm" class="icons" /></a>
-			<a href="triplej/"><img src="triplej.jpg" alt="triplej" class="icons" /></a>
-		</p>
-	</nav>
+
+<div id="overleaf">
+<header id="profile-head">Ross Ogilvie</header>
+<div class="profile-box">
+	<p>A mathematician at the University of Mannheim.</p>
+	<h3>Research</h3>
+	<p>My research interests centre on the differential geometry of surfaces; harmonic, constant mean curvature, and Willmore.</p>
+	<!-- <p>The background image is one component of the moduli space of harmonically immersed tori in the 3-sphere. That is, each point represents a harmonic torus.</p> -->
+	<p><a href="mailto:r.ogilvie@math.uni-mannheim.de"><img src="email.png" alt="email" class="bullet" /></a> r.ogilvie@math.uni-mannheim.de</p>
+	<p><a href="https://analysis.math.uni-mannheim.de/de/mitarbeiter/ross-ogilvie/"><img src="mannheim.jpg" alt="mannheim" class="icon" /></a>
+	<a href="http://www.maths.usyd.edu.au/ut/people?who=RB_Ogilvie"><img src="usyd.png" alt="usyd" class="icon" /></a></p>
+	<p><a href="http://hdl.handle.net/2123/16475">Thesis</a>, <a href="https://arxiv.org/search/math?searchtype=author&query=Ogilvie%2C+R">papers</a>, and <a href="https://github.com/RossOgilvie/Talks">talks</a>.</p>
 </div>
-<!-- /profile -->
+<div class="profile-box">
+	<p><h3>Teaching</h3></p>
+	<p></p>
+</div>
+<div class="profile-box">
+	<p><h3>Personal</h3></p>
+	<p>
+		<a href="http://www.facebook.com/ross.ogilvie"><img src="facebook.png" alt="facebook" class="icon" /></a>
+		<a href="https://github.com/RossOgilvie"><img src="github.png" alt="github" class="icon" /></a>
+		<a href="http://www.last.fm/user/Ross_Ogilvie"><img src="lastfm.png" alt="last.fm" class="icon" /></a>
+		<a href="triplej/"><img src="triplej.jpg" alt="triplej" class="icon" /></a>
+	</p>
+</div>
+</div>
 
-<script>
-// To power a phone icon that shows or hides my phone number.
-var phone_text = "<p>My phone number factors as 2&times;7&times;97&times;263&times;1123.</p>\
-<p>Don't forget the leading prefix (zero or +61).</p>";
-var bio_text = document.getElementById('bio').innerHTML;
-var phone_show = false;
 
-function change_phone() {
-	if (!phone_show) {
-		document.getElementById('bio').innerHTML = phone_text;
-	} else {
-		document.getElementById('bio').innerHTML = bio_text;
-	}
-	phone_show = !phone_show;
-}
-</script>
 </body>
 </html>
