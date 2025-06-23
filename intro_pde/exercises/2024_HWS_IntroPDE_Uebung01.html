@@ -1,0 +1,100 @@
+<!DOCTYPE html> 
+<html lang='en-US' xml:lang='en-US'> 
+<head> <title>Exercise Sheet 1- Introduction to Partial Differential Equations</title> 
+<meta charset='utf-8' /> 
+<meta content='TeX4ht (https://tug.org/tex4ht/)' name='generator' /> 
+<meta content='width=device-width,initial-scale=1' name='viewport' /> 
+<link href='2024_HWS_IntroPDE_Uebung01.css' rel='stylesheet' type='text/css' /> 
+<meta content='2024_HWS_IntroPDE_Uebung01.tex' name='src' /> 
+ <script async='async' id='MathJax-script' src='https://cdn.jsdelivr.net/npm/mathjax@3/es5/mml-chtml.js' type='text/javascript'></script>  
+</head><body>
+<!-- l. 13 --><p class='noindent'></p>
+<div class='center'>
+<!-- l. 13 --><p class='noindent'>
+</p><!-- l. 13 --><p class='noindent'><span class='cmbx-12'>Introduction to Partial Differential Equations</span><br />
+<span class='cmbx-12'>Exercise Sheet 1</span></p></div>
+<!-- l. 13 --><p class='noindent'>Ross Ogilvie                                                                                         2nd September,
+2024<br class='newline' />______________________________________________________________________________________________________________________________
+</p><!-- l. 15 --><p class='indent'>     This exercise sheet is revision and does not count towards the exercise points. But please feel
+                                                                                      
+free to attempt them (before or after the tutorial) and submit them for correction any
+way.
+</p><dl class='enumerate-enumitem'><dt class='enumerate-enumitem'>
+<span class='cmbx-10x-x-109'>1.</span></dt><dd class='enumerate-enumitem'><span class='cmbx-10x-x-109'>Chain rule in multiple variables </span>Recall the chain rule for functions of
+multivariable variables (Satz 10.4(iii) in Schmidt’s Analysis II script): Let
+<!-- l. 23 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mi>f</mi> <mo class='MathClass-punc' stretchy='false'>:</mo> <mi>U</mi> <mo class='MathClass-rel' stretchy='false'>⊂</mo> <mi>X</mi> <mo class='MathClass-rel' stretchy='false'>→</mo> <mi>Y</mi> </mrow></math> be differentiable
+at <!-- l. 23 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mrow><msub><mrow><mi>x</mi></mrow><mrow><mn>0</mn></mrow></msub> <mo class='MathClass-rel' stretchy='false'>∈</mo> <mi>U</mi></mrow></math> and
+<!-- l. 23 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mi>g</mi> <mo class='MathClass-punc' stretchy='false'>:</mo> <mi>V</mi> <mo class='MathClass-rel' stretchy='false'>⊂</mo> <mi>Y</mi> <mo class='MathClass-rel' stretchy='false'>→</mo> <mi>Z</mi></mrow></math> be differentiable
+at <!-- l. 23 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mi>f</mi><mo class='MathClass-open' stretchy='false'>(</mo><msub><mrow><mi>x</mi></mrow><mrow><mn>0</mn></mrow></msub><mo class='MathClass-close' stretchy='false'>)</mo> <mo class='MathClass-rel' stretchy='false'>∈</mo> <mi>f</mi><mo class='MathClass-open' stretchy='false'>[</mo><mi>U</mi><mo class='MathClass-close' stretchy='false'>]</mo> <mo class='MathClass-rel' stretchy='false'>⊂</mo> <mi>V</mi> </mrow></math>. Then
+<!-- l. 23 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mi>g</mi> <mo class='MathClass-bin' stretchy='false'>∘</mo> <mi>f</mi></mrow></math> is differentiable
+at <!-- l. 23 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><msub><mrow><mi>x</mi></mrow><mrow><mn>0</mn></mrow></msub></math> and
+<table class='equation-star'><tr><td>
+<!-- l. 24 --><math class='equation' display='block' xmlns='http://www.w3.org/1998/Math/MathML'><mrow>
+                             <msup><mrow><mo class='MathClass-open' stretchy='false'>(</mo><mi>g</mi> <mo class='MathClass-bin' stretchy='false'>∘</mo> <mi>f</mi><mo class='MathClass-close' stretchy='false'>)</mo></mrow><mrow><mi>′</mi></mrow></msup><mo class='MathClass-open' stretchy='false'>(</mo><msub><mrow><mi>x</mi></mrow><mrow>
+<mn>0</mn></mrow></msub><mo class='MathClass-close' stretchy='false'>)</mo> <mo class='MathClass-rel' stretchy='false'>=</mo> <msup><mrow><mi>g</mi></mrow><mrow><mi>′</mi></mrow></msup><mo class='MathClass-open' stretchy='false'>(</mo><mi>f</mi><mo class='MathClass-open' stretchy='false'>(</mo><msub><mrow><mi>x</mi></mrow><mrow>
+<mn>0</mn></mrow></msub><mo class='MathClass-close' stretchy='false'>)</mo><mo class='MathClass-close' stretchy='false'>)</mo> <mo class='MathClass-bin' stretchy='false'>∘</mo> <msup><mrow><mi>f</mi></mrow><mrow><mi>′</mi></mrow></msup><mo class='MathClass-open' stretchy='false'>(</mo><msub><mrow><mi>x</mi></mrow><mrow>
+<mn>0</mn></mrow></msub><mo class='MathClass-close' stretchy='false'>)</mo><mo class='MathClass-punc' stretchy='false'>.</mo>
+</mrow></math></td></tr></table>
+<dl class='enumerate-enumitem'><dt class='enumerate-enumitem'>
+<span class='cmbx-10x-x-109'>(a)</span></dt><dd class='enumerate-enumitem'>Why does this chain rule above use function composition, when the chain rule for functions of a single
+variable uses multiplication? i.e. <table class='equation-star'><tr><td>
+<!-- l. 30 --><math class='equation' display='block' xmlns='http://www.w3.org/1998/Math/MathML'><mrow>
+                       <mfrac><mrow><mi>d</mi></mrow>
+<mrow><mi mathvariant='italic'>𝑑𝑥</mi></mrow></mfrac><msup><mrow><mo class='MathClass-open' stretchy='false'>(</mo><msup><mrow><mi>x</mi></mrow><mrow><mn>2</mn></mrow></msup> <mo class='MathClass-bin' stretchy='false'>+</mo> <mn>1</mn><mo class='MathClass-close' stretchy='false'>)</mo></mrow><mrow><mn>3</mn></mrow></msup> <mo class='MathClass-rel' stretchy='false'>=</mo> <mn>3</mn><msup><mrow><mo class='MathClass-open' stretchy='false'>(</mo><msup><mrow><mi>x</mi></mrow><mrow><mn>2</mn></mrow></msup> <mo class='MathClass-bin' stretchy='false'>+</mo> <mn>1</mn><mo class='MathClass-close' stretchy='false'>)</mo></mrow><mrow><mn>2</mn></mrow></msup> <mo class='MathClass-bin' stretchy='false'>⋅</mo> <mn>2</mn><mi>x</mi><mo class='MathClass-punc' stretchy='false'>.</mo> <mo class='MathClass-rel' stretchy='false'>=</mo> <mn>6</mn><mi>x</mi><msup><mrow><mo class='MathClass-open' stretchy='false'>(</mo><msup><mrow><mi>x</mi></mrow><mrow><mn>2</mn></mrow></msup> <mo class='MathClass-bin' stretchy='false'>+</mo> <mn>1</mn><mo class='MathClass-close' stretchy='false'>)</mo></mrow><mrow><mn>2</mn></mrow></msup><mo class='MathClass-punc' stretchy='false'>.</mo>
+</mrow></math></td></tr></table>
+</dd><dt class='enumerate-enumitem'>
+<span class='cmbx-10x-x-109'>(b)</span></dt><dd class='enumerate-enumitem'>Suppose that <!-- l. 37 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mi>u</mi> <mo class='MathClass-punc' stretchy='false'>:</mo> <msup><mrow><mi>ℝ</mi></mrow><mrow><mi>n</mi></mrow></msup> <mo class='MathClass-rel' stretchy='false'>→</mo> <mi>ℝ</mi></mrow></math>
+and <!-- l. 37 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mi>x</mi> <mo class='MathClass-punc' stretchy='false'>:</mo> <mi>ℝ</mi> <mo class='MathClass-rel' stretchy='false'>→</mo> <msup><mrow><mi>ℝ</mi></mrow><mrow><mi>n</mi></mrow></msup></mrow></math>.
+Express the chain rule with partial derivatives to show that <table class='equation-star'><tr><td>
+                                                                                      
+                                                                                      
+<!-- l. 38 --><math class='equation' display='block' xmlns='http://www.w3.org/1998/Math/MathML'><mrow>
+                               <mfrac><mrow><mi>d</mi></mrow>
+<mrow><mi mathvariant='italic'>𝑑𝑡</mi></mrow></mfrac><mi>u</mi><mo class='MathClass-open' stretchy='false'>(</mo><mi>x</mi><mo class='MathClass-open' stretchy='false'>(</mo><mi>t</mi><mo class='MathClass-close' stretchy='false'>)</mo><mo class='MathClass-close' stretchy='false'>)</mo> <mo class='MathClass-rel' stretchy='false'>=</mo><munderover accent='false' accentunder='false'><mrow><mo> ∑</mo>
+  </mrow><mrow><mi>i</mi><mo class='MathClass-rel' stretchy='false'>=</mo><mn>1</mn></mrow><mrow><mi>n</mi></mrow></munderover> <mfrac><mrow><mi mathvariant='italic'>∂𝑢</mi></mrow>
+<mrow><mi>∂</mi><msub><mrow><mi>x</mi></mrow><mrow><mi>i</mi></mrow></msub></mrow></mfrac> <mfrac><mrow><mi>d</mi><msub><mrow><mi>x</mi></mrow><mrow><mi>i</mi></mrow></msub></mrow> 
+ <mrow><mi mathvariant='italic'>𝑑𝑡</mi></mrow></mfrac> <mo class='MathClass-punc' stretchy='false'>.</mo>
+</mrow></math></td></tr></table>
+</dd><dt class='enumerate-enumitem'>
+<span class='cmbx-10x-x-109'>(c)</span></dt><dd class='enumerate-enumitem'>Write the above formula in terms of gradients and dot products.
+</dd><dt class='enumerate-enumitem'>
+<span class='cmbx-10x-x-109'>(d)</span></dt><dd class='enumerate-enumitem'>Consider the function <!-- l. 47 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mi>u</mi><mo class='MathClass-open' stretchy='false'>(</mo><mi>x</mi><mo class='MathClass-punc' stretchy='false'>,</mo><mi>y</mi><mo class='MathClass-close' stretchy='false'>)</mo> <mo class='MathClass-rel' stretchy='false'>=</mo> <msup><mrow><mi>x</mi></mrow><mrow><mn>2</mn></mrow></msup> <mo class='MathClass-bin' stretchy='false'>+</mo> <mn>2</mn><mi>y</mi></mrow></math>
+and the polar coordinates <!-- l. 47 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mi>x</mi> <mo class='MathClass-rel' stretchy='false'>=</mo> <mi>r</mi><mi class='loglike'>cos</mi><mo>⁡<!-- FUNCTION APPLICATION --></mo><!-- nolimits --><mi>𝜃</mi><mo class='MathClass-punc' stretchy='false'>,</mo><mi>y</mi> <mo class='MathClass-rel' stretchy='false'>=</mo> <mi>r</mi><mstyle><mi class='loglike'>sin</mi><mo>⁡<!-- FUNCTION APPLICATION --></mo></mstyle><!-- nolimits --><mi>𝜃</mi></mrow></math>.
+Compute the radial and angular derivatives of <!-- l. 47 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mi>u</mi></math>.
+</dd><dt class='enumerate-enumitem'>
+<span class='cmbx-10x-x-109'>(e)</span></dt><dd class='enumerate-enumitem'>Consider a scalar function <!-- l. 50 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mi>F</mi> <mo class='MathClass-punc' stretchy='false'>:</mo> <msup><mrow><mi>ℝ</mi></mrow><mrow><mi>n</mi></mrow></msup> <mo class='MathClass-bin' stretchy='false'>×</mo> <mi>ℝ</mi> <mo class='MathClass-bin' stretchy='false'>×</mo> <msup><mrow><mi>ℝ</mi></mrow><mrow><mi>n</mi></mrow></msup> <mo class='MathClass-rel' stretchy='false'>→</mo> <mi>ℝ</mi></mrow></math>
+of <!-- l. 50 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mn>2</mn><mi>n</mi> <mo class='MathClass-bin' stretchy='false'>+</mo> <mn>1</mn></mrow></math>
+variables and a function <!-- l. 50 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mi>u</mi> <mo class='MathClass-punc' stretchy='false'>:</mo> <msup><mrow><mi>ℝ</mi></mrow><mrow><mi>n</mi></mrow></msup> <mo class='MathClass-rel' stretchy='false'>→</mo> <mi>ℝ</mi></mrow></math>.
+Write an expression for the derivative of <!-- l. 50 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mi>F</mi><mo class='MathClass-open' stretchy='false'>(</mo><mi class='MathClass-op'>∇</mi><mo> ⁡<!-- FUNCTION APPLICATION --></mo><mi>u</mi><mo class='MathClass-open' stretchy='false'>(</mo><mi>x</mi><mo class='MathClass-close' stretchy='false'>)</mo><mo class='MathClass-punc' stretchy='false'>,</mo><mi>u</mi><mo class='MathClass-open' stretchy='false'>(</mo><mi>x</mi><mo class='MathClass-close' stretchy='false'>)</mo><mo class='MathClass-punc' stretchy='false'>,</mo><mi>x</mi><mo class='MathClass-close' stretchy='false'>)</mo></mrow></math>
+with respect to <!-- l. 50 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><msub><mrow><mi>x</mi></mrow><mrow><mn>1</mn></mrow></msub></math>.</dd></dl>
+</dd><dt class='enumerate-enumitem'>
+<span class='cmbx-10x-x-109'>2.</span></dt><dd class='enumerate-enumitem'><span class='cmbx-10x-x-109'>Contour Diagrams</span>
+<!-- l. 114 --><p class='noindent'>Consider the function <!-- l. 114 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mi>f</mi> <mo class='MathClass-punc' stretchy='false'>:</mo> <msup><mrow><mi>ℝ</mi></mrow><mrow><mn>2</mn></mrow></msup> <mo class='MathClass-rel' stretchy='false'>→</mo> <mi>ℝ</mi></mrow></math>
+defined by <!-- l. 114 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mi>f</mi><mo class='MathClass-open' stretchy='false'>(</mo><mi>x</mi><mo class='MathClass-punc' stretchy='false'>,</mo><mi>y</mi><mo class='MathClass-close' stretchy='false'>)</mo> <mo class='MathClass-rel' stretchy='false'>=</mo> <msup><mrow><mi>x</mi></mrow><mrow><mn>2</mn></mrow></msup> <mo class='MathClass-bin' stretchy='false'>+</mo> <mi>y</mi> <mrow><mo fence='true' form='prefix'>(</mo><mrow><mi>x</mi> <mo class='MathClass-bin' stretchy='false'>+</mo> <mn>1</mn></mrow><mo fence='true' form='postfix'>)</mo></mrow> <mo class='MathClass-bin' stretchy='false'>−</mo> <msup><mrow><mi>y</mi></mrow><mrow><mn>3</mn></mrow></msup></mrow></math>.
+</p><dl class='enumerate-enumitem'><dt class='enumerate-enumitem'>
+<span class='cmbx-10x-x-109'>(a)</span></dt><dd class='enumerate-enumitem'>Use computer assistance to draw a <span class='cmti-10x-x-109'>contour diagram </span>for this function. A contour is another word
+for a level set <!-- l. 119 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mrow><msup><mrow><mi>f</mi></mrow><mrow><mo class='MathClass-bin' stretchy='false'>−</mo><mn>1</mn></mrow></msup><mo class='MathClass-open' stretchy='false'>[</mo><mo class='MathClass-open' stretchy='false'>{</mo><mi>c</mi><mo class='MathClass-close' stretchy='false'>}</mo><mo class='MathClass-close' stretchy='false'>]</mo></mrow></math>.
+<br class='newline' />For example  <a href='https://www.desmos.com/calculator/8equb62lyq'>https://www.desmos.com/calculator/8equb62lyq</a>.
+</dd><dt class='enumerate-enumitem'>
+<span class='cmbx-10x-x-109'>(b)</span></dt><dd class='enumerate-enumitem'>What is the maximum and minimum of this function? Where are its critical points? (Give
+approximate values.)</dd></dl>
+</dd><dt class='enumerate-enumitem'>
+<span class='cmbx-10x-x-109'>3.</span></dt><dd class='enumerate-enumitem'><span class='cmbx-10x-x-109'>Multiindices and the Generalised Leibniz rule </span>In this question we introduce multiindex notation. A
+<span class='cmti-10x-x-109'>multiindex </span>of <!-- l. 148 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mi>n</mi></math>
+variables is a vector <!-- l. 148 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mi>γ</mi> <mo class='MathClass-rel' stretchy='false'>∈</mo> <msubsup><mrow><mi>ℕ</mi></mrow><mrow><mn>0</mn></mrow><mrow><mi>n</mi></mrow></msubsup></mrow></math>.
+<dl class='enumerate-enumitem'><dt class='enumerate-enumitem'>
+                                                                                      
+                                                                                      
+<span class='cmbx-10x-x-109'>(a)</span></dt><dd class='enumerate-enumitem'>Let <!-- l. 151 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mi>x</mi> <mo class='MathClass-rel' stretchy='false'>=</mo> <mo class='MathClass-open' stretchy='false'>(</mo><msub><mrow><mi>x</mi></mrow><mrow><mn>1</mn></mrow></msub><mo class='MathClass-punc' stretchy='false'>,</mo><msub><mrow><mi>x</mi></mrow><mrow><mn>2</mn></mrow></msub><mo class='MathClass-punc' stretchy='false'>,</mo><msub><mrow><mi>x</mi></mrow><mrow><mn>3</mn></mrow></msub><mo class='MathClass-close' stretchy='false'>)</mo></mrow></math>
+be coordinates on <!-- l. 151 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><msup><mrow><mi>ℝ</mi></mrow><mrow><mn>3</mn></mrow></msup></math>.
+Write out the full expression for the derivative <!-- l. 151 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><msup><mrow><mi>∂</mi></mrow><mrow><mo class='MathClass-open' stretchy='false'>(</mo><mn>0</mn><mo class='MathClass-punc' stretchy='false'>,</mo><mn>2</mn><mo class='MathClass-punc' stretchy='false'>,</mo><mn>1</mn><mo class='MathClass-close' stretchy='false'>)</mo></mrow></msup></math>.
+</dd><dt class='enumerate-enumitem'>
+<span class='cmbx-10x-x-109'>(b)</span></dt><dd class='enumerate-enumitem'>Why do we need to assume that partial derivatives commute for multiindex notation to be
+useful?
+</dd><dt class='enumerate-enumitem'>
+<span class='cmbx-10x-x-109'>(c)</span></dt><dd class='enumerate-enumitem'>Which multiindices satisfy <!-- l. 157 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mo class='MathClass-rel' stretchy='false'>|</mo><mi>γ</mi><mo class='MathClass-rel' stretchy='false'>|</mo><mo class='MathClass-rel' stretchy='false'>≤</mo> <mn>2</mn></mrow></math>
+and which satisfy <!-- l. 157 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mi>γ</mi> <mo class='MathClass-rel' stretchy='false'>≤</mo> <mo class='MathClass-open' stretchy='false'>(</mo><mn>0</mn><mo class='MathClass-punc' stretchy='false'>,</mo><mn>2</mn><mo class='MathClass-punc' stretchy='false'>,</mo><mn>1</mn><mo class='MathClass-close' stretchy='false'>)</mo></mrow></math>?</dd></dl>
+</dd></dl>
+    
+</body> 
+</html>

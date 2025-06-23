@@ -1,0 +1,144 @@
+<!DOCTYPE html> 
+<html lang='en-US' xml:lang='en-US'> 
+<head> <title>Exercise Sheet 11- Introduction to Partial Differential Equations</title> 
+<meta charset='utf-8' /> 
+<meta content='TeX4ht (https://tug.org/tex4ht/)' name='generator' /> 
+<meta content='width=device-width,initial-scale=1' name='viewport' /> 
+<link href='2024_HWS_IntroPDE_Uebung11.css' rel='stylesheet' type='text/css' /> 
+<meta content='2024_HWS_IntroPDE_Uebung11.tex' name='src' /> 
+ <script async='async' id='MathJax-script' src='https://cdn.jsdelivr.net/npm/mathjax@3/es5/mml-chtml.js' type='text/javascript'></script>  
+</head><body>
+<!-- l. 12 --><p class='noindent'></p>
+<div class='center'>
+<!-- l. 12 --><p class='noindent'>
+</p><!-- l. 12 --><p class='noindent'><span class='cmbx-12'>Introduction to Partial Differential Equations</span><br />
+<span class='cmbx-12'>Exercise Sheet 11</span></p></div>
+<!-- l. 12 --><p class='noindent'>Ross Ogilvie                                                                                         11th November,
+2024<br class='newline' />______________________________________________________________________________________________________________________________
+</p><dl class='enumerate-enumitem'><dt class='enumerate-enumitem'>                                                                                      
+                                                                                      
+<span class='cmbx-10x-x-109'>33.</span></dt><dd class='enumerate-enumitem'><span class='cmbx-10x-x-109'>The distribution of heat</span>
+<!-- l. 24 --><p class='noindent'>Consider        the        fundamental        solution        of        the        heat        equation
+<!-- l. 24 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mi mathvariant='normal'>Φ</mi><mo class='MathClass-open' stretchy='false'>(</mo><mi>x</mi><mo class='MathClass-punc' stretchy='false'>,</mo><mi>t</mi><mo class='MathClass-close' stretchy='false'>)</mo></mrow></math>
+given in Definition 4.5.
+</p><dl class='enumerate-enumitem'><dt class='enumerate-enumitem'>
+<span class='cmbx-10x-x-109'>(a)</span></dt><dd class='enumerate-enumitem'>Show that this extends to a smooth function on <!-- l. 28 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mrow><msup><mrow><mi>ℝ</mi></mrow><mrow><mi>n</mi></mrow></msup> <mo class='MathClass-bin' stretchy='false'>×</mo> <mi>ℝ</mi> <mo class='MathClass-bin' stretchy='false'>∖</mo><mo class='MathClass-open' stretchy='false'>{</mo><mo class='MathClass-open' stretchy='false'>(</mo><mn>0</mn><mo class='MathClass-punc' stretchy='false'>,</mo><mn>0</mn><mo class='MathClass-close' stretchy='false'>)</mo><mo class='MathClass-close' stretchy='false'>}</mo></mrow></math>.
+                                                                             <span class='cmti-10x-x-109'>(2 points)</span>
+</dd><dt class='enumerate-enumitem'>
+<span class='cmbx-10x-x-109'>(b)</span></dt><dd class='enumerate-enumitem'>Verify that this obeys the heat equation on <!-- l. 32 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mrow><msup><mrow><mi>ℝ</mi></mrow><mrow><mi>n</mi></mrow></msup> <mo class='MathClass-bin' stretchy='false'>×</mo> <mi>ℝ</mi> <mo class='MathClass-bin' stretchy='false'>∖</mo><mo class='MathClass-open' stretchy='false'>{</mo><mo class='MathClass-open' stretchy='false'>(</mo><mn>0</mn><mo class='MathClass-punc' stretchy='false'>,</mo><mn>0</mn><mo class='MathClass-close' stretchy='false'>)</mo><mo class='MathClass-close' stretchy='false'>}</mo></mrow></math>.
+                                                                             <span class='cmti-10x-x-109'>(2 points)</span></dd></dl>
+<!-- l. 36 --><p class='noindent'>We want to show that <!-- l. 36 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mi>φ</mi><mo class='MathClass-rel' stretchy='false'>↦</mo><mi>H</mi><mo class='MathClass-open' stretchy='false'>(</mo><mi>φ</mi><mo class='MathClass-close' stretchy='false'>)</mo> <mo class='MathClass-rel' stretchy='false'>=</mo><msub><mrow> <mo>∫</mo>
+ <!-- nolimits --><!-- nolimits --></mrow><mrow><msup><mrow><mi>ℝ</mi></mrow><mrow><mi>n</mi></mrow></msup><mo class='MathClass-bin' stretchy='false'>×</mo><mi>ℝ</mi></mrow></msub><mi mathvariant='normal'>Φ</mi><mo class='MathClass-open' stretchy='false'>(</mo><mi>x</mi><mo class='MathClass-punc' stretchy='false'>,</mo><mi>t</mi><mo class='MathClass-close' stretchy='false'>)</mo><mi>φ</mi><mo class='MathClass-open' stretchy='false'>(</mo><mi>x</mi><mo class='MathClass-punc' stretchy='false'>,</mo><mi>t</mi><mo class='MathClass-close' stretchy='false'>)</mo><mspace class='thickpace' width='0.28em'></mspace><mi mathvariant='italic'>𝑑𝑥</mi><mspace class='thinspace' width='0.17em'></mspace><mi mathvariant='italic'>𝑑𝑡</mi></mrow></math> is a distribution.
+Clearly it is linear. Fix a set <!-- l. 36 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mi>K</mi> <mo class='MathClass-rel' stretchy='false'>⊂</mo> <msup><mrow><mi>ℝ</mi></mrow><mrow><mi>n</mi></mrow></msup> <mo class='MathClass-bin' stretchy='false'>×</mo> <mi>ℝ</mi></mrow></math>
+and let <!-- l. 36 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mi>φ</mi> <mo class='MathClass-rel' stretchy='false'>∈</mo> <msubsup><mrow><mi>C</mi></mrow><mrow><mn>0</mn></mrow><mrow><mi>∞</mi></mrow></msubsup><mo class='MathClass-open' stretchy='false'>(</mo><mi>K</mi><mo class='MathClass-close' stretchy='false'>)</mo></mrow></math>.
+</p><dl class='enumerate-enumitem'><dt class='enumerate-enumitem'>
+<span class='cmbx-10x-x-109'>(c)</span></dt><dd class='enumerate-enumitem'>Why must there be a constant <!-- l. 40 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mi>T</mi> <mo class='MathClass-rel' stretchy='false'>&gt;</mo> <mn>0</mn></mrow></math>
+with <table class='equation-star'><tr><td>
+<!-- l. 41 --><math class='equation' display='block' xmlns='http://www.w3.org/1998/Math/MathML'><mrow>
+                          <mi>H</mi><mo class='MathClass-open' stretchy='false'>(</mo><mi>φ</mi><mo class='MathClass-close' stretchy='false'>)</mo> <mo class='MathClass-rel' stretchy='false'>=</mo><msubsup><mrow><mo> ∫
+ <!-- nolimits --></mo><!-- nolimits --></mrow><mrow><mn>0</mn></mrow><mrow><mi>T</mi> </mrow></msubsup><msub><mrow><mo> ∫
+ <!-- nolimits --></mo><!-- nolimits --></mrow><mrow><msup><mrow><mi>ℝ</mi></mrow><mrow><mi>n</mi></mrow></msup></mrow></msub><mi mathvariant='normal'>Φ</mi><mo class='MathClass-open' stretchy='false'>(</mo><mi>x</mi><mo class='MathClass-punc' stretchy='false'>,</mo><mi>t</mi><mo class='MathClass-close' stretchy='false'>)</mo><mi>φ</mi><mo class='MathClass-open' stretchy='false'>(</mo><mi>x</mi><mo class='MathClass-punc' stretchy='false'>,</mo><mi>t</mi><mo class='MathClass-close' stretchy='false'>)</mo><mspace class='thickpace' width='0.28em'></mspace><mi mathvariant='italic'>𝑑𝑥</mi><mspace class='thinspace' width='0.17em'></mspace><mi mathvariant='italic'>𝑑𝑡</mi><mspace class='thickpace' width='0.28em'></mspace><mspace class='thickpace' width='0.28em'></mspace><mo class='MathClass-punc' stretchy='false'>?</mo>
+</mrow></math></td></tr></table>
+<!-- l. 44 --><p class='noindent'>                                                                              <span class='cmti-10x-x-109'>(1 point)</span>
+</p></dd><dt class='enumerate-enumitem'>
+<span class='cmbx-10x-x-109'>(d)</span></dt><dd class='enumerate-enumitem'>Conclude with the help of Lemma 4.6 and Theorem 4.7 that <table class='equation-star'><tr><td>
+<!-- l. 47 --><math class='equation' display='block' xmlns='http://www.w3.org/1998/Math/MathML'><mrow>
+                                   <mo class='MathClass-rel' stretchy='false'>|</mo><mi>H</mi><mo class='MathClass-open' stretchy='false'>(</mo><mi>φ</mi><mo class='MathClass-close' stretchy='false'>)</mo><mo class='MathClass-rel' stretchy='false'>|</mo><mo class='MathClass-rel' stretchy='false'>≤</mo> <mi>T</mi><mspace class='thinspace' width='0.17em'></mspace><mo class='MathClass-rel' stretchy='false'>∥</mo><mi>φ</mi><msub><mrow><mo class='MathClass-rel' stretchy='false'>∥</mo></mrow><mrow><mi>K</mi><mo class='MathClass-punc' stretchy='false'>,</mo><mn>0</mn></mrow></msub><mo class='MathClass-punc' stretchy='false'>.</mo>
+</mrow></math></td></tr></table>
+                                                                                      
+                                                                                      
+<!-- l. 50 --><p class='noindent'>Hence
+<!-- l. 50 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mi>H</mi></math>
+is a continuous linear functional.                                                                    <span class='cmti-10x-x-109'>(2 points)</span></p></dd></dl>
+<!-- l. 54 --><p class='noindent'>Finally, we want to show that (in the sense of distributions)
+<!-- l. 54 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mo class='MathClass-open' stretchy='false'>(</mo><msub><mrow><mi>∂</mi></mrow><mrow><mi>t</mi></mrow></msub> <mo class='MathClass-bin' stretchy='false'>−</mo><mi mathvariant='normal'>Δ</mi><mo class='MathClass-close' stretchy='false'>)</mo><mi>H</mi> <mo class='MathClass-rel' stretchy='false'>=</mo> <mi>δ</mi></mrow></math>.
+</p><dl class='enumerate-enumitem'><dt class='enumerate-enumitem'>
+<span class='cmbx-10x-x-109'>(e)</span></dt><dd class='enumerate-enumitem'>Extend Theorem 4.7 to show that <table class='equation-star'><tr><td>
+<!-- l. 62 --><math class='equation' display='block' xmlns='http://www.w3.org/1998/Math/MathML'><mrow>
+                            <msub><mrow><mo>∫
+ <!-- nolimits --></mo><!-- nolimits --></mrow><mrow><msup><mrow><mi>ℝ</mi></mrow><mrow><mi>n</mi></mrow></msup></mrow></msub><mi mathvariant='normal'>Φ</mi><mo class='MathClass-open' stretchy='false'>(</mo><mi>x</mi> <mo class='MathClass-bin' stretchy='false'>−</mo> <mi>y</mi><mo class='MathClass-punc' stretchy='false'>,</mo><mi>t</mi><mo class='MathClass-close' stretchy='false'>)</mo><mi>h</mi><mo class='MathClass-open' stretchy='false'>(</mo><mi>y</mi><mo class='MathClass-punc' stretchy='false'>,</mo><mi>s</mi><mo class='MathClass-close' stretchy='false'>)</mo><mspace class='thickpace' width='0.28em'></mspace><mi mathvariant='italic'>𝑑𝑦</mi> <mo class='MathClass-rel' stretchy='false'>→</mo> <mi>h</mi><mo class='MathClass-open' stretchy='false'>(</mo><mi>x</mi><mo class='MathClass-punc' stretchy='false'>,</mo><mi>s</mi><mo class='MathClass-close' stretchy='false'>)</mo>
+</mrow></math></td></tr></table>
+<!-- l. 65 --><p class='noindent'>as <!-- l. 65 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mi>t</mi> <mo class='MathClass-rel' stretchy='false'>→</mo> <mn>0</mn></mrow></math>,
+uniformly in <!-- l. 65 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mi>s</mi></math>.
+                                                                              <span class='cmti-10x-x-109'>(1 point)</span>
+</p></dd><dt class='enumerate-enumitem'>
+<span class='cmbx-10x-x-109'>(f)</span></dt><dd class='enumerate-enumitem'>Hence show that <table class='equation-star'><tr><td>
+<!-- l. 70 --><math class='equation' display='block' xmlns='http://www.w3.org/1998/Math/MathML'><mrow>
+                         <msubsup><mrow><mo>∫
+ <!-- nolimits --></mo><!-- nolimits --></mrow><mrow><mi>𝜀</mi></mrow><mrow><mi>∞</mi></mrow></msubsup><msub><mrow><mo>∫ 
+<!-- nolimits --></mo><!-- nolimits --></mrow><mrow><msup><mrow><mi>ℝ</mi></mrow><mrow><mi>n</mi></mrow></msup></mrow></msub><mi mathvariant='normal'>Φ</mi><mo class='MathClass-open' stretchy='false'>(</mo><mo class='MathClass-bin' stretchy='false'>−</mo><msub><mrow><mi>∂</mi></mrow><mrow><mi>t</mi></mrow></msub><mi>φ</mi> <mo class='MathClass-bin' stretchy='false'>−</mo><mi mathvariant='normal'>Δ</mi><mi>φ</mi><mo class='MathClass-close' stretchy='false'>)</mo><mspace class='thickpace' width='0.28em'></mspace><mi mathvariant='italic'>𝑑𝑦</mi><mspace class='thinspace' width='0.17em'></mspace><mi mathvariant='italic'>𝑑𝑡</mi> <mo class='MathClass-rel' stretchy='false'>→</mo> <mi>φ</mi><mo class='MathClass-open' stretchy='false'>(</mo><mn>0</mn><mo class='MathClass-punc' stretchy='false'>,</mo><mn>0</mn><mo class='MathClass-close' stretchy='false'>)</mo>
+</mrow></math></td></tr></table>
+<!-- l. 73 --><p class='noindent'>as <!-- l. 73 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mi>𝜀</mi> <mo class='MathClass-rel' stretchy='false'>→</mo> <mn>0</mn></mrow></math>.
+                                                                             <span class='cmti-10x-x-109'>(3 points)</span>
+</p></dd><dt class='enumerate-enumitem'>
+<span class='cmbx-10x-x-109'>(g)</span></dt><dd class='enumerate-enumitem'>Prove that as <!-- l. 77 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mi>𝜀</mi> <mo class='MathClass-rel' stretchy='false'>→</mo> <mn>0</mn></mrow></math>
+<table class='equation-star'><tr><td>
+                                                                                      
+                                                                                      
+<!-- l. 78 --><math class='equation' display='block' xmlns='http://www.w3.org/1998/Math/MathML'><mrow>
+                             <msubsup><mrow><mo>∫
+ <!-- nolimits --></mo><!-- nolimits --></mrow><mrow><mn>0</mn></mrow><mrow><mi>𝜀</mi></mrow></msubsup><msub><mrow><mo> ∫ 
+<!-- nolimits --></mo><!-- nolimits --></mrow><mrow><msup><mrow><mi>ℝ</mi></mrow><mrow><mi>n</mi></mrow></msup></mrow></msub><mi mathvariant='normal'>Φ</mi><mo class='MathClass-open' stretchy='false'>(</mo><mi>y</mi><mo class='MathClass-punc' stretchy='false'>,</mo><mi>t</mi><mo class='MathClass-close' stretchy='false'>)</mo><mi>h</mi><mo class='MathClass-open' stretchy='false'>(</mo><mi>y</mi><mo class='MathClass-punc' stretchy='false'>,</mo><mi>t</mi><mo class='MathClass-close' stretchy='false'>)</mo><mspace class='thickpace' width='0.28em'></mspace><mi mathvariant='italic'>𝑑𝑦</mi><mspace class='thinspace' width='0.17em'></mspace><mi mathvariant='italic'>𝑑𝑡</mi> <mo class='MathClass-rel' stretchy='false'>→</mo> <mn>0</mn>
+</mrow></math></td></tr></table>
+<!-- l. 81 --><p class='noindent'>                                                                             <span class='cmti-10x-x-109'>(2 points)</span></p></dd></dl>
+<!-- l. 83 --><p class='noindent'>Together these integrals show that </p><table class='equation-star'><tr><td>
+<!-- l. 84 --><math class='equation' display='block' xmlns='http://www.w3.org/1998/Math/MathML'><mrow>
+           <mo class='MathClass-open' stretchy='false'>(</mo><msub><mrow><mi>∂</mi></mrow><mrow><mi>t</mi></mrow></msub> <mo class='MathClass-bin' stretchy='false'>−</mo><mi mathvariant='normal'>Δ</mi><mo class='MathClass-close' stretchy='false'>)</mo><mi>H</mi><mo class='MathClass-open' stretchy='false'>(</mo><mi>φ</mi><mo class='MathClass-close' stretchy='false'>)</mo> <mo class='MathClass-rel' stretchy='false'>=</mo> <mrow><mo fence='true' form='prefix'>(</mo><mrow><msubsup><mrow><mo>∫
+ <!-- nolimits --></mo><!-- nolimits --></mrow><mrow><mn>0</mn></mrow><mrow><mi>𝜀</mi></mrow></msubsup> <mo class='MathClass-bin' stretchy='false'>+</mo><msubsup><mrow><mo> ∫ 
+<!-- nolimits --></mo><!-- nolimits --></mrow><mrow><mi>𝜀</mi></mrow><mrow><mi>∞</mi></mrow></msubsup></mrow><mo fence='true' form='postfix'>)</mo></mrow><msub><mrow><mo>∫
+ <!-- nolimits --></mo><!-- nolimits --></mrow><mrow><msup><mrow><mi>ℝ</mi></mrow><mrow><mi>n</mi></mrow></msup></mrow></msub><mi mathvariant='normal'>Φ</mi><mo class='MathClass-open' stretchy='false'>(</mo><mo class='MathClass-bin' stretchy='false'>−</mo><msub><mrow><mi>∂</mi></mrow><mrow><mi>t</mi></mrow></msub><mi>φ</mi> <mo class='MathClass-bin' stretchy='false'>−</mo><mi mathvariant='normal'>Δ</mi><mi>φ</mi><mo class='MathClass-close' stretchy='false'>)</mo><mspace class='thickpace' width='0.28em'></mspace><mi mathvariant='italic'>𝑑𝑦</mi><mspace class='thinspace' width='0.17em'></mspace><mi mathvariant='italic'>𝑑𝑡</mi> <mo class='MathClass-rel' stretchy='false'>=</mo> <mi>φ</mi><mo class='MathClass-open' stretchy='false'>(</mo><mn>0</mn><mo class='MathClass-punc' stretchy='false'>,</mo><mn>0</mn><mo class='MathClass-close' stretchy='false'>)</mo> <mo class='MathClass-rel' stretchy='false'>=</mo> <mi>δ</mi><mo class='MathClass-open' stretchy='false'>(</mo><mi>φ</mi><mo class='MathClass-close' stretchy='false'>)</mo>
+</mrow></math></td></tr></table>
+<!-- l. 88 --><p class='noindent'>for all test functions <!-- l. 88 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mi>φ</mi></math>.
+Therefore <!-- l. 88 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mo class='MathClass-open' stretchy='false'>(</mo><msub><mrow><mi>∂</mi></mrow><mrow><mi>t</mi></mrow></msub> <mo class='MathClass-bin' stretchy='false'>−</mo><mi mathvariant='normal'>Δ</mi><mo class='MathClass-close' stretchy='false'>)</mo><mi>H</mi> <mo class='MathClass-rel' stretchy='false'>=</mo> <mi>δ</mi></mrow></math>
+as claimed.
+</p></dd><dt class='enumerate-enumitem'>
+<span class='cmbx-10x-x-109'>34.</span></dt><dd class='enumerate-enumitem'><span class='cmbx-10x-x-109'>Heat death of the universe</span>
+<!-- l. 242 --><p class='noindent'>First a corollary to Theorem 4.7:
+</p><dl class='enumerate-enumitem'><dt class='enumerate-enumitem'>
+<span class='cmbx-10x-x-109'>(a)</span></dt><dd class='enumerate-enumitem'>Suppose that <!-- l. 245 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mi>h</mi> <mo class='MathClass-rel' stretchy='false'>∈</mo> <msub><mrow><mi>C</mi></mrow><mrow><mi>b</mi></mrow></msub><mo class='MathClass-open' stretchy='false'>(</mo><msup><mrow><mi>ℝ</mi></mrow><mrow><mi>n</mi></mrow></msup><mo class='MathClass-close' stretchy='false'>)</mo> <mo class='MathClass-bin' stretchy='false'>∩</mo> <msup><mrow><mi>L</mi></mrow><mrow><mn>1</mn></mrow></msup><mo class='MathClass-open' stretchy='false'>(</mo><msup><mrow><mi>ℝ</mi></mrow><mrow><mi>n</mi></mrow></msup><mo class='MathClass-close' stretchy='false'>)</mo></mrow></math>
+and <!-- l. 245 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mi>u</mi></math> is
+defined as in Theorem 4.7. Show <table class='equation-star'><tr><td>
+<!-- l. 246 --><math class='equation' display='block' xmlns='http://www.w3.org/1998/Math/MathML'><mrow>
+                            <munder class='msub'><mrow><mi class='qopname'>sup</mi><mo> ⁡<!-- FUNCTION APPLICATION --> </mo></mrow><mrow><mi>x</mi><mo class='MathClass-rel' stretchy='false'>∈</mo><msup><mrow><mi>ℝ</mi></mrow><mrow><mi>n</mi></mrow></msup></mrow></munder><mo class='MathClass-rel' stretchy='false'>|</mo><mi>u</mi><mo class='MathClass-open' stretchy='false'>(</mo><mi>x</mi><mo class='MathClass-punc' stretchy='false'>,</mo><mi>t</mi><mo class='MathClass-close' stretchy='false'>)</mo><mo class='MathClass-rel' stretchy='false'>|</mo><mo class='MathClass-rel' stretchy='false'>≤</mo>  <mfrac><mrow><mn>1</mn></mrow> 
+<mrow><msup><mrow><mo class='MathClass-open' stretchy='false'>(</mo><mn>4</mn><mi mathvariant='italic'>𝜋𝑡</mi><mo class='MathClass-close' stretchy='false'>)</mo></mrow><mrow><mi>n</mi><mo class='MathClass-bin' stretchy='false'>∕</mo><mn>2</mn></mrow></msup></mrow></mfrac><mo class='MathClass-rel' stretchy='false'>∥</mo><mi>h</mi><msub><mrow><mo class='MathClass-rel' stretchy='false'>∥</mo></mrow><mrow><msup><mrow><mi>L</mi></mrow><mrow><mn>1</mn></mrow></msup></mrow></msub><mo class='MathClass-punc' stretchy='false'>.</mo>
+</mrow></math></td></tr></table>
+                                                                                      
+                                                                                      
+<!-- l. 249 --><p class='noindent'>                                                                             <span class='cmti-10x-x-109'>(2 points)</span></p></dd></dl>
+<!-- l. 252 --><p class='noindent'>The above corollary shows how solutions to the heat equation on
+<!-- l. 252 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mrow><msup><mrow><mi>ℝ</mi></mrow><mrow><mi>n</mi></mrow></msup> <mo class='MathClass-bin' stretchy='false'>×</mo> <msup><mrow><mi>ℝ</mi></mrow><mrow><mo class='MathClass-bin' stretchy='false'>+</mo></mrow></msup></mrow></math> with such initial conditions
+behave: they tend to zero as <!-- l. 252 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mi>t</mi> <mo class='MathClass-rel' stretchy='false'>→</mo><mi>∞</mi></mrow></math>.
+Physically this is because if <!-- l. 252 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mi>h</mi> <mo class='MathClass-rel' stretchy='false'>∈</mo> <msup><mrow><mi>L</mi></mrow><mrow><mn>1</mn></mrow></msup></mrow></math>
+then there is a finite amount of total heat, which over time becomes evenly spread across the
+space.
+</p><!-- l. 254 --><p class='noindent'>On open and bounded domains <!-- l. 254 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mi mathvariant='normal'>Ω</mi> <mo class='MathClass-rel' stretchy='false'>⊂</mo> <msup><mrow><mi>ℝ</mi></mrow><mrow><mi>n</mi></mrow></msup></mrow></math>
+we can have different behaviour, due to the boundary conditions holding the
+temperature steady. In this question we determine the long time behaviour of solutions
+<!-- l. 254 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mi>u</mi></math> to the heat equation on
+open and bounded sets <!-- l. 254 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mi mathvariant='normal'>Ω</mi></math>
+with <!-- l. 254 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mi>u</mi><mo class='MathClass-open' stretchy='false'>(</mo><mi>x</mi><mo class='MathClass-punc' stretchy='false'>,</mo><mi>t</mi><mo class='MathClass-close' stretchy='false'>)</mo> <mo class='MathClass-rel' stretchy='false'>=</mo> <mn>0</mn></mrow></math>
+on <!-- l. 254 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mi>∂</mi><mi mathvariant='normal'>Ω</mi> <mo class='MathClass-bin' stretchy='false'>×</mo> <msup><mrow><mi>ℝ</mi></mrow><mrow><mo class='MathClass-bin' stretchy='false'>+</mo></mrow></msup></mrow></math> and
+<!-- l. 254 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mi>u</mi><mo class='MathClass-open' stretchy='false'>(</mo><mi>x</mi><mo class='MathClass-punc' stretchy='false'>,</mo><mn>0</mn><mo class='MathClass-close' stretchy='false'>)</mo> <mo class='MathClass-rel' stretchy='false'>=</mo> <mi>h</mi><mo class='MathClass-open' stretchy='false'>(</mo><mi>x</mi><mo class='MathClass-close' stretchy='false'>)</mo></mrow></math>.We
+claim <!-- l. 254 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mi>u</mi> <mo class='MathClass-rel' stretchy='false'>→</mo> <mn>0</mn></mrow></math>
+as <!-- l. 254 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mi>t</mi> <mo class='MathClass-rel' stretchy='false'>→</mo><mi>∞</mi></mrow></math>.
+</p><dl class='enumerate-enumitem'><dt class='enumerate-enumitem'>
+<span class='cmbx-10x-x-109'>(b)</span></dt><dd class='enumerate-enumitem'>Let <!-- l. 258 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><msub><mrow><mi>l</mi></mrow><mrow><mi>m</mi></mrow></msub></math>
+be the function from Theorem 4.7 that solves heat equation on <!-- l. 258 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><msup><mrow><mi>ℝ</mi></mrow><mrow><mi>n</mi></mrow></msup></math>
+with <!-- l. 258 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mrow><msub><mrow><mi>l</mi></mrow><mrow><mi>m</mi></mrow></msub><mo class='MathClass-open' stretchy='false'>(</mo><mi>x</mi><mo class='MathClass-punc' stretchy='false'>,</mo><mn>0</mn><mo class='MathClass-close' stretchy='false'>)</mo> <mo class='MathClass-rel' stretchy='false'>=</mo> <mi mathvariant='italic'>𝑚𝑘</mi><mo class='MathClass-open' stretchy='false'>(</mo><mi>x</mi><mo class='MathClass-close' stretchy='false'>)</mo></mrow></math>
+for <!-- l. 258 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mi>m</mi></math>
+a constant and <!-- l. 258 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mi>k</mi> <mo class='MathClass-punc' stretchy='false'>:</mo> <msup><mrow><mi>ℝ</mi></mrow><mrow><mi>n</mi></mrow></msup> <mo class='MathClass-rel' stretchy='false'>→</mo> <mo class='MathClass-open' stretchy='false'>[</mo><mn>0</mn><mo class='MathClass-punc' stretchy='false'>,</mo><mn>1</mn><mo class='MathClass-close' stretchy='false'>]</mo></mrow></math>
+a smooth function of compact support such that <!-- l. 258 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mi>k</mi><msub><mrow><mo class='MathClass-rel' stretchy='false'>|</mo></mrow><mrow><mi mathvariant='normal'>Ω</mi></mrow></msub> <mo class='MathClass-rel' stretchy='false'>≡</mo> <mn>1</mn></mrow></math>.
+Why must <!-- l. 258 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mi>k</mi></math>
+exist? Why does <!-- l. 258 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mrow><msub><mrow><mi>l</mi></mrow><mrow><mi>m</mi></mrow></msub> <mo class='MathClass-rel' stretchy='false'>→</mo> <mn>0</mn></mrow></math>
+as <!-- l. 258 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mi>t</mi> <mo class='MathClass-rel' stretchy='false'>→</mo><mi>∞</mi></mrow></math>?
+What boundary conditions on <!-- l. 258 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mi mathvariant='normal'>Ω</mi></math>
+does it obey?                                                                                              <span class='cmti-10x-x-109'>(3 points)</span>
+</dd><dt class='enumerate-enumitem'>
+<span class='cmbx-10x-x-109'>(c)</span></dt><dd class='enumerate-enumitem'>Use            the            monotonicity            property            to            show            that
+<!-- l. 262 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mi>u</mi></math>
+tends to zero.                                                                                             <span class='cmti-10x-x-109'>(2 points)</span>
+<!-- l. 265 --><p class='noindent'>Hint. Consider <!-- l. 265 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mi>a</mi> <mo class='MathClass-rel' stretchy='false'>=</mo><munder class='msub'><mrow><mi class='qopname'> sup</mi><mo> ⁡<!-- FUNCTION APPLICATION --> </mo></mrow><mrow><mi>x</mi><mo class='MathClass-rel' stretchy='false'>∈</mo><mi mathvariant='normal'>Ω</mi></mrow></munder><mo class='MathClass-rel' stretchy='false'>|</mo><mi>u</mi><mo class='MathClass-open' stretchy='false'>(</mo><mi>x</mi><mo class='MathClass-punc' stretchy='false'>,</mo><mn>0</mn><mo class='MathClass-close' stretchy='false'>)</mo><mo class='MathClass-rel' stretchy='false'>|</mo></mrow></math>.</p></dd></dl>
+</dd></dl>
+    
+</body> 
+</html>

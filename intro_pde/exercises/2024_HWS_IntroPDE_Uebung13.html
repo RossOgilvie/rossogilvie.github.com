@@ -1,0 +1,154 @@
+<!DOCTYPE html> 
+<html lang='en-US' xml:lang='en-US'> 
+<head> <title>Exercise Sheet 13- Introduction to Partial Differential Equations</title> 
+<meta charset='utf-8' /> 
+<meta content='TeX4ht (https://tug.org/tex4ht/)' name='generator' /> 
+<meta content='width=device-width,initial-scale=1' name='viewport' /> 
+<link href='2024_HWS_IntroPDE_Uebung13.css' rel='stylesheet' type='text/css' /> 
+<meta content='2024_HWS_IntroPDE_Uebung13.tex' name='src' /> 
+ <script async='async' id='MathJax-script' src='https://cdn.jsdelivr.net/npm/mathjax@3/es5/mml-chtml.js' type='text/javascript'></script>  
+</head><body>
+<!-- l. 12 --><p class='noindent'></p>
+<div class='center'>
+<!-- l. 12 --><p class='noindent'>
+</p><!-- l. 12 --><p class='noindent'><span class='cmbx-12'>Introduction to Partial Differential Equations</span><br />
+<span class='cmbx-12'>Exercise Sheet 13</span></p></div>
+<!-- l. 12 --><p class='noindent'>Ross Ogilvie                                                                                         25th November,
+2024<br class='newline' />______________________________________________________________________________________________________________________________
+</p><dl class='enumerate-enumitem'><dt class='enumerate-enumitem'>
+<span class='cmbx-10x-x-109'>38.</span></dt><dd class='enumerate-enumitem'><span class='cmbx-10x-x-109'>Distinct characteristics</span>                                                              
+                                                                                      
+<dl class='enumerate-enumitem'><dt class='enumerate-enumitem'>
+<span class='cmbx-10x-x-109'>(a)</span></dt><dd class='enumerate-enumitem'>Show that the a smooth function <!-- l. 21 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mi>u</mi> <mo class='MathClass-rel' stretchy='false'>=</mo> <mi>u</mi><mo class='MathClass-open' stretchy='false'>(</mo><mi>ζ</mi><mo class='MathClass-punc' stretchy='false'>,</mo><mi>η</mi><mo class='MathClass-close' stretchy='false'>)</mo> <mo class='MathClass-punc' stretchy='false'>:</mo> <mi>ℝ</mi> <mo class='MathClass-bin' stretchy='false'>×</mo> <mi>ℝ</mi> <mo class='MathClass-rel' stretchy='false'>→</mo> <mi>ℝ</mi></mrow></math>
+is a solution to <!-- l. 21 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mrow><msub><mrow><mi>∂</mi></mrow><mrow><mi>ζ</mi></mrow></msub><msub><mrow><mi>∂</mi></mrow><mrow><mi>η</mi></mrow></msub><mi>u</mi> <mo class='MathClass-rel' stretchy='false'>=</mo> <mn>0</mn></mrow></math>
+exactly when it is of the form <!-- l. 21 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mi>u</mi><mo class='MathClass-open' stretchy='false'>(</mo><mi>ζ</mi><mo class='MathClass-punc' stretchy='false'>,</mo><mi>η</mi><mo class='MathClass-close' stretchy='false'>)</mo> <mo class='MathClass-rel' stretchy='false'>=</mo> <mi>F</mi><mo class='MathClass-open' stretchy='false'>(</mo><mi>ζ</mi><mo class='MathClass-close' stretchy='false'>)</mo> <mo class='MathClass-bin' stretchy='false'>+</mo> <mi>G</mi><mo class='MathClass-open' stretchy='false'>(</mo><mi>η</mi><mo class='MathClass-close' stretchy='false'>)</mo></mrow></math>,
+for smooth functions <!-- l. 21 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mi>F</mi><mo class='MathClass-punc' stretchy='false'>,</mo><mi>G</mi> <mo class='MathClass-punc' stretchy='false'>:</mo> <mi>ℝ</mi> <mo class='MathClass-rel' stretchy='false'>→</mo> <mi>ℝ</mi></mrow></math>.
+<br class='newline' />                                                                             <span class='cmti-10x-x-109'>(2 points)</span>
+</dd><dt class='enumerate-enumitem'>
+<span class='cmbx-10x-x-109'>(b)</span></dt><dd class='enumerate-enumitem'>Under the parameterisation <!-- l. 25 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mi>ζ</mi> <mo class='MathClass-rel' stretchy='false'>=</mo> <mi>x</mi> <mo class='MathClass-bin' stretchy='false'>+</mo> <mi>t</mi><mo class='MathClass-punc' stretchy='false'>,</mo><mi>η</mi> <mo class='MathClass-rel' stretchy='false'>=</mo> <mi>x</mi> <mo class='MathClass-bin' stretchy='false'>−</mo> <mi>t</mi></mrow></math>,
+show that <!-- l. 25 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mi>u</mi></math>
+obeys the one dimensional wave equation <!-- l. 25 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mo class='MathClass-open' stretchy='false'>(</mo><msubsup><mrow><mi>∂</mi></mrow><mrow><mi>t</mi></mrow><mrow><mn>2</mn></mrow></msubsup> <mo class='MathClass-bin' stretchy='false'>−</mo> <msubsup><mrow><mi>∂</mi></mrow><mrow><mi>x</mi></mrow><mrow><mn>2</mn></mrow></msubsup><mo class='MathClass-close' stretchy='false'>)</mo><mi>u</mi> <mo class='MathClass-rel' stretchy='false'>=</mo> <mn>0</mn></mrow></math>
+exactly when it solves the PDE in (a).                                                             <span class='cmti-10x-x-109'>(3 points)</span>
+</dd><dt class='enumerate-enumitem'>
+<span class='cmbx-10x-x-109'>(c)</span></dt><dd class='enumerate-enumitem'>From parts (a) and (b), derive D’Alembert’s formula.                                         <span class='cmti-10x-x-109'>(2 points)</span></dd></dl>
+</dd><dt class='enumerate-enumitem'>
+<span class='cmbx-10x-x-109'>39.</span></dt><dd class='enumerate-enumitem'><span class='cmbx-10x-x-109'>Faster!</span>
+<!-- l. 105 --><p class='noindent'>How should you modify D’Alembert’s formula for this situation? </p><table class='equation-star'><tr><td>
+<!-- l. 106 --><math class='equation' display='block' xmlns='http://www.w3.org/1998/Math/MathML'>
+ <mrow><mo fence='true' form='prefix'>{</mo><mrow> <mtable align='axis' class='array' columnlines='none' displaystyle='true' equalcolumns='false' equalrows='false' rowlines='none' style=''> <mtr class='array-row'><mtd class='array-td' columnalign='left'><msubsup><mrow><mi>∂</mi></mrow><mrow><mi>t</mi></mrow><mrow><mn>2</mn></mrow></msubsup><mi>u</mi> <mo class='MathClass-bin' stretchy='false'>−</mo> <msup><mrow><mi>a</mi></mrow><mrow><mn>2</mn></mrow></msup><msubsup><mrow><mi>∂</mi></mrow><mrow><mi>x</mi></mrow><mrow><mn>2</mn></mrow></msubsup><mi>u</mi> <mo class='MathClass-rel' stretchy='false'>=</mo> <mn>0</mn><mspace class='quad' width='1em'></mspace></mtd>
+</mtr>  <mtr class='array-row'><mtd class='array-td' columnalign='left'><mi>u</mi><mo class='MathClass-open' stretchy='false'>(</mo><mi>x</mi><mo class='MathClass-punc' stretchy='false'>,</mo><mn>0</mn><mo class='MathClass-close' stretchy='false'>)</mo> <mo class='MathClass-rel' stretchy='false'>=</mo> <mi>g</mi><mo class='MathClass-open' stretchy='false'>(</mo><mi>x</mi><mo class='MathClass-close' stretchy='false'>)</mo>      <mspace class='quad' width='1em'></mspace></mtd>
+</mtr>  <mtr class='array-row'><mtd class='array-td' columnalign='left'><msub><mrow><mi>∂</mi></mrow><mrow><mi>t</mi></mrow></msub><mi>u</mi><mo class='MathClass-open' stretchy='false'>(</mo><mi>x</mi><mo class='MathClass-punc' stretchy='false'>,</mo><mn>0</mn><mo class='MathClass-close' stretchy='false'>)</mo> <mo class='MathClass-rel' stretchy='false'>=</mo> <mi>h</mi><mo class='MathClass-open' stretchy='false'>(</mo><mi>x</mi><mo class='MathClass-close' stretchy='false'>)</mo><mo class='MathClass-punc' stretchy='false'>,</mo>  <mspace class='quad' width='1em'></mspace></mtd></mtr><!-- @{}l@{\quad }l@{} --></mtable>                                                                    </mrow><mo fence='true' form='postfix'></mo></mrow>
+</math></td></tr></table>
+<!-- l. 113 --><p class='noindent'>Solve this for the initial data <!-- l. 113 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mi>a</mi> <mo class='MathClass-rel' stretchy='false'>=</mo> <mn>2</mn></mrow></math>,
+<!-- l. 113 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mi>g</mi><mo class='MathClass-open' stretchy='false'>(</mo><mi>x</mi><mo class='MathClass-close' stretchy='false'>)</mo> <mo class='MathClass-rel' stretchy='false'>=</mo> <mi class='loglike'>sin</mi><mo>⁡<!-- FUNCTION APPLICATION --></mo><!-- nolimits --><mo class='MathClass-open' stretchy='false'>(</mo><mi>x</mi><mo class='MathClass-close' stretchy='false'>)</mo></mrow></math> and
+<!-- l. 113 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mi>h</mi><mo class='MathClass-open' stretchy='false'>(</mo><mi>x</mi><mo class='MathClass-close' stretchy='false'>)</mo> <mo class='MathClass-rel' stretchy='false'>=</mo> <mn>1</mn></mrow></math>.
+<span class='cmti-10x-x-109'>(5 points)</span>
+</p></dd><dt class='enumerate-enumitem'>
+<span class='cmbx-10x-x-109'>40.</span></dt><dd class='enumerate-enumitem'><span class='cmbx-10x-x-109'>Plane Waves</span>
+<!-- l. 152 --><p class='noindent'>Suppose that <!-- l. 152 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mi>u</mi> <mo class='MathClass-punc' stretchy='false'>:</mo> <msup><mrow><mi>ℝ</mi></mrow><mrow><mi>n</mi></mrow></msup> <mo class='MathClass-bin' stretchy='false'>×</mo> <mi>ℝ</mi> <mo class='MathClass-rel' stretchy='false'>→</mo> <mi>ℝ</mi></mrow></math>
+is a solution to the following modified wave equation: </p><table class='equation'><tr><td>
+<!-- l. 153 --><p class='noindent'>
+                                                                                      
+                                                                                      
+</p><!-- l. 153 --><math class='equation' display='block' xmlns='http://www.w3.org/1998/Math/MathML'><mrow>
+                              <mstyle class='label' id='x1-8r1'></mstyle><!-- endlabel --><mfrac><mrow><msup><mrow><mi>∂</mi></mrow><mrow><mn>2</mn></mrow></msup><mi>u</mi></mrow>
+<mrow><mi>∂</mi><msup><mrow><mi>t</mi></mrow><mrow><mn>2</mn></mrow></msup></mrow></mfrac> <mo class='MathClass-bin' stretchy='false'>−</mo><munderover accent='false' accentunder='false'><mrow><mo>∑</mo>
+  </mrow><mrow><mi>j</mi><mo class='MathClass-rel' stretchy='false'>=</mo><mn>1</mn></mrow><mrow><mi>n</mi></mrow></munderover><msubsup><mrow><mi>c</mi></mrow><mrow>
+<mi>j</mi></mrow><mrow><mn>2</mn></mrow></msubsup> <mfrac><mrow><msup><mrow><mi>∂</mi></mrow><mrow><mn>2</mn></mrow></msup><mi>u</mi></mrow>
+<mrow><mi>∂</mi><msubsup><mrow><mi>x</mi></mrow><mrow><mi>j</mi></mrow><mrow><mn>2</mn></mrow></msubsup></mrow></mfrac> <mo class='MathClass-rel' stretchy='false'>=</mo> <mn>0</mn><mspace class='thickpace' width='0.28em'></mspace><mo class='MathClass-punc' stretchy='false'>,</mo>
+                                                                                      <mstyle class='label' id='x1-9r0'></mstyle><!-- endlabel -->
+</mrow></math></td><td class='eq-no'>(<!-- l. 156 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mo class='MathClass-bin' stretchy='false'>∗</mo></math>)<a id='x1-10r0'></a></td></tr></table>
+<!-- l. 156 --><p class='noindent'> where <!-- l. 157 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mrow><msub><mrow><mi>c</mi></mrow><mrow><mn>1</mn></mrow></msub><mo class='MathClass-punc' stretchy='false'>,</mo><mi>…</mi><mo class='MathClass-punc' stretchy='false'>,</mo><msub><mrow><mi>c</mi></mrow><mrow><mi>n</mi></mrow></msub> <mo class='MathClass-rel' stretchy='false'>&gt;</mo> <mn>0</mn></mrow></math>
+are constants.
+</p><dl class='enumerate-enumitem'><dt class='enumerate-enumitem'>
+<span class='cmbx-10x-x-109'>(a)</span></dt><dd class='enumerate-enumitem'>Let <!-- l. 161 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mi>α</mi> <mo class='MathClass-rel' stretchy='false'>∈</mo> <msup><mrow><mi>ℝ</mi></mrow><mrow><mi>n</mi></mrow></msup></mrow></math> be a unit
+vector <!-- l. 161 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mo class='MathClass-rel' stretchy='false'>∥</mo><mi>α</mi><mo class='MathClass-rel' stretchy='false'>∥</mo> <mo class='MathClass-rel' stretchy='false'>=</mo> <mn>1</mn></mrow></math>,
+<!-- l. 161 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mi>μ</mi> <mo class='MathClass-rel' stretchy='false'>∈</mo> <mi>ℝ</mi></mrow></math> and
+<!-- l. 161 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mi>F</mi> <mo class='MathClass-punc' stretchy='false'>:</mo> <mi>ℝ</mi> <mo class='MathClass-rel' stretchy='false'>→</mo> <mi>ℝ</mi></mrow></math> a twice
+continuously differentiable function. Show that <table class='equation-star'><tr><td>
+<!-- l. 162 --><math class='equation' display='block' xmlns='http://www.w3.org/1998/Math/MathML'><mrow>
+                                 <mi>u</mi><mo class='MathClass-open' stretchy='false'>(</mo><mi>x</mi><mo class='MathClass-punc' stretchy='false'>,</mo><mi>t</mi><mo class='MathClass-close' stretchy='false'>)</mo> <mo class='MathClass-punc' stretchy='false'>:</mo><mo class='MathClass-rel' stretchy='false'>=</mo> <mi>F</mi><mo class='MathClass-open' stretchy='false'>(</mo><mi>α</mi> <mo class='MathClass-bin' stretchy='false'>⋅</mo> <mi>x</mi> <mo class='MathClass-bin' stretchy='false'>−</mo> <mi mathvariant='italic'>𝜇𝑡</mi><mo class='MathClass-close' stretchy='false'>)</mo>
+</mrow></math></td></tr></table>
+<!-- l. 165 --><p class='noindent'>is a solution of <!-- l. 165 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mtext class='MathClass-open' stretchy='false'>(∗)</mtext></mrow></math>
+exactly when </p><table class='equation-star'><tr><td>
+<!-- l. 166 --><math class='equation' display='block' xmlns='http://www.w3.org/1998/Math/MathML'><mrow>
+                                  <msup><mrow><mi>μ</mi></mrow><mrow><mn>2</mn></mrow></msup> <mo class='MathClass-rel' stretchy='false'>=</mo><munderover accent='false' accentunder='false'><mrow><mo> ∑</mo>
+  </mrow><mrow><mi>j</mi><mo class='MathClass-rel' stretchy='false'>=</mo><mn>1</mn></mrow><mrow><mi>n</mi></mrow></munderover><msubsup><mrow><mi>α</mi></mrow><mrow>
+<mi>j</mi></mrow><mrow><mn>2</mn></mrow></msubsup><msubsup><mrow><mi>c</mi></mrow><mrow>
+<mi>j</mi></mrow><mrow><mn>2</mn></mrow></msubsup>
+</mrow></math></td></tr></table>
+<!-- l. 169 --><p class='noindent'>or
+<!-- l. 169 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mi>F</mi></math>
+is                                 linear.                                 Solutions                                 of
+<!-- l. 170 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mtext class='MathClass-open' stretchy='false'>(∗)</mtext></mrow></math>
+with this form are called <span class='cmti-10x-x-109'>plane waves</span>.                                                             <span class='cmti-10x-x-109'>(2 points)</span>
+                                                                                      
+                                                                                      
+</p></dd><dt class='enumerate-enumitem'>
+<span class='cmbx-10x-x-109'>(b)</span></dt><dd class='enumerate-enumitem'>For the solutions in (a), examine whether the following property holds for all
+<!-- l. 174 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mi>x</mi> <mo class='MathClass-rel' stretchy='false'>∈</mo> <msup><mrow><mi>ℝ</mi></mrow><mrow><mi>n</mi></mrow></msup></mrow></math> and
+<!-- l. 174 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mi>t</mi> <mo class='MathClass-rel' stretchy='false'>∈</mo> <mi>ℝ</mi></mrow></math>:
+<table class='equation-star'><tr><td>
+<!-- l. 175 --><math class='equation' display='block' xmlns='http://www.w3.org/1998/Math/MathML'><mrow>
+                                 <mi>u</mi><mo class='MathClass-open' stretchy='false'>(</mo><mi>x</mi><mo class='MathClass-punc' stretchy='false'>,</mo><mi>t</mi><mo class='MathClass-close' stretchy='false'>)</mo> <mo class='MathClass-rel' stretchy='false'>=</mo> <mi>u</mi><mo class='MathClass-open' stretchy='false'>(</mo><mi>x</mi> <mo class='MathClass-bin' stretchy='false'>−</mo> <mi mathvariant='italic'>𝜇𝑡𝛼</mi><mo class='MathClass-punc' stretchy='false'>,</mo><mn>0</mn><mo class='MathClass-close' stretchy='false'>)</mo><mo class='MathClass-punc' stretchy='false'>.</mo>
+</mrow></math></td></tr></table>
+<!-- l. 178 --><p class='noindent'>Interpret this equation in terms of direction and speed.                                       <span class='cmti-10x-x-109'>(3 points)</span></p></dd></dl>
+</dd><dt class='enumerate-enumitem'>
+<span class='cmbx-10x-x-109'>41.</span></dt><dd class='enumerate-enumitem'><span class='cmbx-10x-x-109'>Electromagnetic Waves</span>
+<!-- l. 228 --><p class='noindent'>In physics, electrical and magnetic fields are modelled as time-dependent vector fields, which mathematically are
+smooth functions <!-- l. 228 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mi>E</mi><mo class='MathClass-punc' stretchy='false'>,</mo><mi>B</mi> <mo class='MathClass-punc' stretchy='false'>:</mo> <msup><mrow><mi>ℝ</mi></mrow><mrow><mn>3</mn></mrow></msup> <mo class='MathClass-bin' stretchy='false'>×</mo> <mi>ℝ</mi> <mo class='MathClass-rel' stretchy='false'>→</mo> <msup><mrow><mi>ℝ</mi></mrow><mrow><mn>3</mn></mrow></msup></mrow></math>.
+Through a series of experiments in the 18th and 19th centuries, the existence and properties of these
+fields were discovered. Importantly, it was discovered that the two phenomena were connected (both
+magnets and static electricity had been known since antiquity). In 1861 James Clerk Maxwell
+published a series of papers summarising electromagnetic theory, including a collection of 20
+differential equations. Over time these were further reduced to the following four (by Heaviside 1884
+using vector notation), called <span class='cmti-10x-x-109'>Maxwell’s Equations</span>:
+</p><!-- tex4ht:inline --><!-- l. 233 --><math display='block' xmlns='http://www.w3.org/1998/Math/MathML'><mtable class='align-star' columnalign='left' displaystyle='true' rowlines='' style=''>
+                 <mtr><mtd class='align-odd' columnalign='right'><mi class='MathClass-op'>∇</mi><mo> ⁡<!-- FUNCTION APPLICATION --></mo><mo class='MathClass-bin' stretchy='false'>⋅</mo> <mi>E</mi></mtd>                 <mtd class='align-even'> <mo class='MathClass-rel' stretchy='false'>=</mo>  <mfrac><mrow><mn>1</mn></mrow> 
+<mrow><msub><mrow><mi>𝜀</mi></mrow><mrow><mn>0</mn></mrow></msub></mrow></mfrac><mi>ρ</mi><mspace width='2em'></mspace></mtd>                 <mtd class='align-odd' columnalign='right'><mi class='MathClass-op'>∇</mi><mo> ⁡<!-- FUNCTION APPLICATION --></mo><mo class='MathClass-bin' stretchy='false'>×</mo> <mi>E</mi></mtd>                 <mtd class='align-even'> <mo class='MathClass-rel' stretchy='false'>=</mo> <mo class='MathClass-bin' stretchy='false'>−</mo><mfrac><mrow><mi mathvariant='italic'>∂𝐵</mi></mrow>
+ <mrow><mi mathvariant='italic'>∂𝑡</mi></mrow></mfrac> <mspace width='2em'></mspace></mtd>                          <mtd class='align-label' columnalign='right'></mtd>                 <mtd class='align-label'><mspace width='2em'></mspace></mtd>                 <mtd class='align-label' columnalign='right'></mtd>                 <mtd class='align-label'>
+                 <mspace width='2em'></mspace></mtd></mtr><mtr><mtd class='align-odd' columnalign='right'><mi class='MathClass-op'>∇</mi><mo> ⁡<!-- FUNCTION APPLICATION --></mo><mo class='MathClass-bin' stretchy='false'>⋅</mo> <mi>B</mi></mtd>                 <mtd class='align-even'> <mo class='MathClass-rel' stretchy='false'>=</mo> <mn>0</mn><mspace width='2em'></mspace></mtd>                    <mtd class='align-odd' columnalign='right'><mi class='MathClass-op'>∇</mi><mo> ⁡<!-- FUNCTION APPLICATION --></mo><mo class='MathClass-bin' stretchy='false'>×</mo> <mi>B</mi></mtd>                 <mtd class='align-even'> <mo class='MathClass-rel' stretchy='false'>=</mo> <msub><mrow><mi>μ</mi></mrow><mrow><mn>0</mn></mrow></msub><mi>J</mi> <mo class='MathClass-bin' stretchy='false'>+</mo> <msub><mrow><mi>𝜀</mi></mrow><mrow><mn>0</mn></mrow></msub><msub><mrow><mi>μ</mi></mrow><mrow><mn>0</mn></mrow></msub><mfrac><mrow><mi mathvariant='italic'>∂𝐸</mi></mrow> 
+ <mrow><mi mathvariant='italic'>∂𝑡</mi></mrow></mfrac> <mo class='MathClass-punc' stretchy='false'>.</mo><mspace width='2em'></mspace></mtd>                 <mtd class='align-label' columnalign='right'></mtd>                 <mtd class='align-label'><mspace width='2em'></mspace></mtd>                 <mtd class='align-label' columnalign='right'></mtd>                 <mtd class='align-label'>
+<mspace width='2em'></mspace></mtd></mtr></mtable></math>
+<!-- l. 234 --><p class='noindent'>As is usual, the <!-- l. 234 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mi class='MathClass-op'>∇</mi><mo> ⁡<!-- FUNCTION APPLICATION --></mo></mrow></math> operator acts
+on the spatial coordinates <!-- l. 234 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mi>x</mi></math>,
+and the <!-- l. 234 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mo class='MathClass-bin' stretchy='false'>×</mo></math> denotes the cross
+product of <!-- l. 234 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><msup><mrow><mi>ℝ</mi></mrow><mrow><mn>3</mn></mrow></msup></math>. The constants
+                                                                                      
+                                                                                      
+<!-- l. 235 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><msub><mrow><mi>𝜀</mi></mrow><mrow><mn>0</mn></mrow></msub></math>, the electrical permittivity, and
+<!-- l. 235 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><msub><mrow><mi>μ</mi></mrow><mrow><mn>0</mn></mrow></msub></math>, the magnetic permeability,
+are approximately <!-- l. 235 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mrow><msub><mrow><mi>𝜀</mi></mrow><mrow><mn>0</mn></mrow></msub> <mo class='MathClass-rel' stretchy='false'>≈</mo> <mn>8</mn><mo class='MathClass-punc' stretchy='false'>,</mo><mn>854</mn> <mo class='MathClass-bin' stretchy='false'>⋅</mo> <mn>1</mn><msup><mrow><mn>0</mn></mrow><mrow><mo class='MathClass-bin' stretchy='false'>−</mo><mn>12</mn></mrow></msup><mstyle displaystyle='false'><mfrac><mrow> <mstyle mathvariant='normal'><mi>A</mi></mstyle><mo class='MathClass-bin' stretchy='false'>⋅</mo><mstyle mathvariant='normal'><mi>s</mi></mstyle>
+</mrow><mrow><mstyle mathvariant='normal'><mi>V</mi></mstyle><mo class='MathClass-bin' stretchy='false'>⋅</mo><mstyle mathvariant='normal'><mi>m</mi></mstyle></mrow></mfrac></mstyle></mrow></math>
+and <!-- l. 236 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mrow><msub><mrow><mi>μ</mi></mrow><mrow><mn>0</mn></mrow></msub> <mo class='MathClass-rel' stretchy='false'>≈</mo> <mn>1</mn><mo class='MathClass-punc' stretchy='false'>,</mo><mn>257</mn> <mo class='MathClass-bin' stretchy='false'>⋅</mo> <mn>1</mn><msup><mrow><mn>0</mn></mrow><mrow><mo class='MathClass-bin' stretchy='false'>−</mo><mn>6</mn></mrow></msup><mstyle displaystyle='false'><mfrac><mrow> <mstyle mathvariant='normal'><mi>V</mi></mstyle><mo class='MathClass-bin' stretchy='false'>⋅</mo><mstyle mathvariant='normal'><mi>s</mi></mstyle>
+</mrow><mrow><mstyle mathvariant='normal'><mi>A</mi></mstyle><mo class='MathClass-bin' stretchy='false'>⋅</mo><mstyle mathvariant='normal'><mi>m</mi></mstyle></mrow></mfrac></mstyle></mrow></math> (V=Volt,
+s=Seconds, A=Ampere and m=Metre) in a vacuum. Electrical charges are included via the charge density
+<!-- l. 237 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mi>ρ</mi></math> and electric currents are
+the movements of charges, <!-- l. 237 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mi>J</mi> <mo class='MathClass-punc' stretchy='false'>:</mo><mo class='MathClass-rel' stretchy='false'>=</mo> <mi mathvariant='italic'>𝑣𝜌</mi></mrow></math>
+for a velocity field <!-- l. 237 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mi>v</mi></math>.
+</p><!-- l. 239 --><p class='noindent'>The two equations with divergence were formulated by Gauss, based on known inverse-square force
+laws, the curl of the electric field is due to Faraday, and the curl of the magnetic field is due to
+Ampère. The last term in Ampère’s law that has the time-derivative of the electrical field was an
+addition of Maxwell. With this correction, he was able to derive the equations for electromagnetic
+waves, as you will now do.
+</p><dl class='enumerate-enumitem'><dt class='enumerate-enumitem'>
+<span class='cmbx-10x-x-109'>(a)</span></dt><dd class='enumerate-enumitem'>Let <!-- l. 242 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mi>E</mi></math>
+und <!-- l. 242 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mi>B</mi></math>
+be solutions to Maxwell’s equations in the absence of electric charges, <!-- l. 242 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mi>ρ</mi> <mo class='MathClass-rel' stretchy='false'>=</mo> <mn>0</mn><mo class='MathClass-punc' stretchy='false'>,</mo><mi>J</mi> <mo class='MathClass-rel' stretchy='false'>=</mo> <mn>0</mn></mrow></math>.
+Show that they each satisfy a modified wave equation (Question 40). You may use without proof
+the identity <!-- l. 244 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mi class='MathClass-op'>∇</mi><mo> ⁡<!-- FUNCTION APPLICATION --></mo><mo class='MathClass-bin' stretchy='false'>×</mo> <mo class='MathClass-open' stretchy='false'>(</mo><mi class='MathClass-op'>∇</mi><mo> ⁡<!-- FUNCTION APPLICATION --></mo><mo class='MathClass-bin' stretchy='false'>×</mo> <mi>f</mi><mo class='MathClass-close' stretchy='false'>)</mo> <mo class='MathClass-rel' stretchy='false'>=</mo> <mi class='MathClass-op'>∇</mi><mo> ⁡<!-- FUNCTION APPLICATION --></mo><mo class='MathClass-open' stretchy='false'>(</mo><mi class='MathClass-op'>∇</mi><mo> ⁡<!-- FUNCTION APPLICATION --></mo><mo class='MathClass-bin' stretchy='false'>⋅</mo> <mi>f</mi><mo class='MathClass-close' stretchy='false'>)</mo> <mo class='MathClass-bin' stretchy='false'>−</mo><mo class='MathClass-bin' stretchy='false'>△</mo><mi>f</mi></mrow></math>
+for smooth functions <!-- l. 244 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mi>f</mi> <mo class='MathClass-punc' stretchy='false'>:</mo> <msup><mrow><mi>ℝ</mi></mrow><mrow><mn>3</mn></mrow></msup> <mo class='MathClass-rel' stretchy='false'>→</mo> <msup><mrow><mi>ℝ</mi></mrow><mrow><mn>3</mn></mrow></msup></mrow></math>.
+<br class='newline' />                                                                             <span class='cmti-10x-x-109'>(3 points)</span>
+</dd><dt class='enumerate-enumitem'>
+<span class='cmbx-10x-x-109'>(b)</span></dt><dd class='enumerate-enumitem'>Predict the speed of these waves.                                                          <span class='cmti-10x-x-109'>(2 Bonus Points)</span>
+</dd><dt class='enumerate-enumitem'>
+<span class='cmbx-10x-x-109'>(c)</span></dt><dd class='enumerate-enumitem'>Argue          that          Ampère’s          law          in          its          original          form
+<!-- l. 252 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mi class='MathClass-op'>∇</mi><mo> ⁡<!-- FUNCTION APPLICATION --></mo><mo class='MathClass-bin' stretchy='false'>×</mo> <mi>B</mi> <mo class='MathClass-rel' stretchy='false'>=</mo> <msub><mrow><mi>μ</mi></mrow><mrow><mn>0</mn></mrow></msub><mi>J</mi></mrow></math>
+violates                     the                     conservation                     of                     charge
+<!-- l. 252 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mi>ρ</mi></math>
+under some conditions. Refer to Exercise Sheet 5 for the definition of a conservation law. Thereby
+derive Maxwell’s additional term.                                                         <span class='cmti-10x-x-109'>(3 Bonus Points)</span></dd></dl>
+</dd></dl>
+    
+</body> 
+</html>

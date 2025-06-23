@@ -1,0 +1,143 @@
+<!DOCTYPE html> 
+<html lang='en-US' xml:lang='en-US'> 
+<head> <title>Exercise Sheet 5- Introduction to Partial Differential Equations</title> 
+<meta charset='utf-8' /> 
+<meta content='TeX4ht (https://tug.org/tex4ht/)' name='generator' /> 
+<meta content='width=device-width,initial-scale=1' name='viewport' /> 
+<link href='2024_HWS_IntroPDE_Uebung05.css' rel='stylesheet' type='text/css' /> 
+<meta content='2024_HWS_IntroPDE_Uebung05.tex' name='src' /> 
+ <script async='async' id='MathJax-script' src='https://cdn.jsdelivr.net/npm/mathjax@3/es5/mml-chtml.js' type='text/javascript'></script>  
+</head><body>
+<!-- l. 12 --><p class='noindent'></p>
+<div class='center'>
+<!-- l. 12 --><p class='noindent'>
+</p><!-- l. 12 --><p class='noindent'><span class='cmbx-12'>Introduction to Partial Differential Equations</span><br />
+<span class='cmbx-12'>Exercise Sheet 5</span></p></div>
+<!-- l. 12 --><p class='noindent'>Ross Ogilvie                                                                                        30th September,
+2024<br class='newline' />______________________________________________________________________________________________________________________________
+</p><dl class='enumerate-enumitem'><dt class='enumerate-enumitem'>                                                                                      
+                                                                                      
+<span class='cmbx-10x-x-109'>13.</span></dt><dd class='enumerate-enumitem'> <span class='cmbx-10x-x-109'>Is this an applied math course?</span>
+<!-- l. 21 --><p class='noindent'>In economics, the Black-Scholes equation is a PDE that describes the price
+<!-- l. 21 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mi>V</mi> </mrow></math> of an
+(European-style) option under some assumptions about the risk and expected return, as a function of time
+<!-- l. 21 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mi>t</mi></math> and current
+stock price <!-- l. 21 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mi>S</mi></math>.
+The equation is </p><table class='equation-star'><tr><td>
+<!-- l. 22 --><math class='equation' display='block' xmlns='http://www.w3.org/1998/Math/MathML'><mrow>
+                            <mfrac><mrow><mi mathvariant='italic'>∂𝑉</mi> </mrow>
+ <mrow><mi mathvariant='italic'>∂𝑡</mi></mrow></mfrac> <mo class='MathClass-bin' stretchy='false'>+</mo> <mfrac><mrow><mn>1</mn></mrow> 
+<mrow><mn>2</mn></mrow></mfrac><msup><mrow><mi>σ</mi></mrow><mrow><mn>2</mn></mrow></msup><msup><mrow><mi>S</mi></mrow><mrow><mn>2</mn></mrow></msup><mfrac><mrow><msup><mrow><mi>∂</mi></mrow><mrow><mn>2</mn></mrow></msup><mi>V</mi> </mrow> 
+<mrow><mi>∂</mi><msup><mrow><mi>S</mi></mrow><mrow><mn>2</mn></mrow></msup></mrow></mfrac>  <mo class='MathClass-rel' stretchy='false'>=</mo> <mi mathvariant='italic'>𝑟𝑉</mi> <mo class='MathClass-bin' stretchy='false'>−</mo> <mi mathvariant='italic'>𝑟𝑆</mi><mfrac><mrow><mi mathvariant='italic'>∂𝑉</mi> </mrow> 
+<mrow><mi mathvariant='italic'>∂𝑆</mi></mrow></mfrac><mo class='MathClass-punc' stretchy='false'>,</mo>
+</mrow></math></td></tr></table>
+<!-- l. 25 --><p class='noindent'>where
+<!-- l. 25 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mi>r</mi></math>
+and
+<!-- l. 25 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mi>σ</mi></math>
+are constants representing the interest rate and the stock volatility respectively. Describe the
+order of this equation, and whether it is elliptic, parabolic, and/or hyperbolic. <br class='newline' />                                                                             <span class='cmti-10x-x-109'>(3 points)</span>
+</p></dd><dt class='enumerate-enumitem'>
+<span class='cmbx-10x-x-109'>14.</span></dt><dd class='enumerate-enumitem'><span class='cmbx-10x-x-109'>Around and around</span>
+<!-- l. 57 --><p class='noindent'>Consider the unit circle <!-- l. 57 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mi>C</mi> <mo class='MathClass-rel' stretchy='false'>=</mo> <mo class='MathClass-open' stretchy='false'>{</mo><msup><mrow><mi>x</mi></mrow><mrow><mn>2</mn></mrow></msup> <mo class='MathClass-bin' stretchy='false'>+</mo> <msup><mrow><mi>y</mi></mrow><mrow><mn>2</mn></mrow></msup> <mo class='MathClass-rel' stretchy='false'>=</mo> <mn>1</mn><mo class='MathClass-close' stretchy='false'>}</mo><mo class='MathClass-rel' stretchy='false'>⊂</mo> <msup><mrow><mi>ℝ</mi></mrow><mrow><mn>2</mn></mrow></msup></mrow></math>.
+In this question we will evaluate the integral </p><table class='equation-star'><tr><td>
+<!-- l. 58 --><math class='equation' display='block' xmlns='http://www.w3.org/1998/Math/MathML'><mrow>
+                                        <msub><mrow><mo>∫
+ <!-- nolimits --></mo><!-- nolimits --></mrow><mrow><mi>C</mi></mrow></msub><mi>y</mi><mspace class='thickpace' width='0.28em'></mspace><mi mathvariant='italic'>𝑑𝜎</mi>                                     <mstyle class='maketag'><mtext>(∗)</mtext></mstyle><mspace class='nbsp' width='0.33em'></mspace><mstyle class='label' id='x1-4r0'></mstyle><!-- endlabel -->
+</mrow></math></td></tr></table>
+<!-- l. 63 --><p class='noindent'>in two different ways, demonstrating that it does not depend on the choice of parametrisation.
+                                                                                      
+                                                                                      
+</p><dl class='enumerate-enumitem'><dt class='enumerate-enumitem'>
+<span class='cmbx-10x-x-109'>(a)</span></dt><dd class='enumerate-enumitem'>Consider a regular parameterisation <!-- l. 67 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mi mathvariant='normal'>Φ</mi></math>
+of a subset <!-- l. 67 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mi>A</mi></math> and a
+continuous function <!-- l. 67 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mi>f</mi></math>
+on <!-- l. 67 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mi>A</mi></math>.
+Why (or under what conditions) is the integral unchanged by removing a point from
+<!-- l. 68 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mi>A</mi></math>:
+                                                                        <span class='cmti-10x-x-109'>(1 bonus point)</span>
+<table class='equation-star'><tr><td>
+<!-- l. 70 --><math class='equation' display='block' xmlns='http://www.w3.org/1998/Math/MathML'><mrow>
+                                 <msub><mrow><mo>∫
+ <!-- nolimits --></mo><!-- nolimits --></mrow><mrow><mi>A</mi></mrow></msub><mi>f</mi><mspace class='thickpace' width='0.28em'></mspace><mi mathvariant='italic'>𝑑𝜎</mi> <mo class='MathClass-rel' stretchy='false'>=</mo><msub><mrow><mo> ∫ 
+<!-- nolimits --></mo><!-- nolimits --></mrow><mrow><mi>A</mi><mo class='MathClass-bin' stretchy='false'>∖</mo><mo class='MathClass-open' stretchy='false'>{</mo><mi>a</mi><mo class='MathClass-close' stretchy='false'>}</mo></mrow></msub><mi>f</mi><mspace class='thickpace' width='0.28em'></mspace><mi mathvariant='italic'>𝑑𝜎</mi><mo class='MathClass-punc' stretchy='false'>.</mo>
+</mrow></math></td></tr></table>
+<!-- l. 73 --><p class='noindent'>Therefore in order to compute the submanifold integration (<!-- l. 73 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mo class='MathClass-bin' stretchy='false'>∗</mo></math>)
+it is enough to use parameterisation that cover all but finitely many points of <!-- l. 73 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mi>C</mi></math>.
+</p></dd><dt class='enumerate-enumitem'>
+<span class='cmbx-10x-x-109'>(b)</span></dt><dd class='enumerate-enumitem'>Consider the regular parametrisation <!-- l. 76 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mi mathvariant='normal'>Φ</mi> <mo class='MathClass-punc' stretchy='false'>:</mo> <mo class='MathClass-open' stretchy='false'>(</mo><mn>0</mn><mo class='MathClass-punc' stretchy='false'>,</mo><mn>2</mn><mi>π</mi><mo class='MathClass-close' stretchy='false'>)</mo> <mo class='MathClass-rel' stretchy='false'>→</mo> <mi>C</mi></mrow></math>
+given by <!-- l. 76 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mi>t</mi><mo class='MathClass-rel' stretchy='false'>↦</mo><mo class='MathClass-open' stretchy='false'>(</mo><mi class='loglike'>cos</mi><mo>⁡<!-- FUNCTION APPLICATION --></mo><!-- nolimits --><mi>t</mi><mo class='MathClass-punc' stretchy='false'>,</mo><mstyle><mi class='loglike'>sin</mi><mo>⁡<!-- FUNCTION APPLICATION --></mo></mstyle><!-- nolimits --><mi>t</mi><mo class='MathClass-close' stretchy='false'>)</mo></mrow></math>.
+Compute the integral (<!-- l. 76 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mo class='MathClass-bin' stretchy='false'>∗</mo></math>)
+using this parametrisation.                                                                            <span class='cmti-10x-x-109'>(2 points)</span>
+</dd><dt class='enumerate-enumitem'>
+<span class='cmbx-10x-x-109'>(c)</span></dt><dd class='enumerate-enumitem'>Consider upper and lower halves of the circle: <!-- l. 80 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mrow><msub><mrow><mi>U</mi></mrow><mrow><mn>1</mn></mrow></msub> <mo class='MathClass-rel' stretchy='false'>=</mo> <mo class='MathClass-open' stretchy='false'>{</mo><mo class='MathClass-open' stretchy='false'>(</mo><mi>x</mi><mo class='MathClass-punc' stretchy='false'>,</mo><mi>y</mi><mo class='MathClass-close' stretchy='false'>)</mo> <mo class='MathClass-rel' stretchy='false'>∈</mo> <mi>C</mi><mo class='MathClass-rel' stretchy='false'>∣</mo><mi>y</mi> <mo class='MathClass-rel' stretchy='false'>&gt;</mo> <mn>0</mn><mo class='MathClass-close' stretchy='false'>}</mo></mrow></math>
+and <!-- l. 80 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mrow><msub><mrow><mi>U</mi></mrow><mrow><mn>2</mn></mrow></msub> <mo class='MathClass-rel' stretchy='false'>=</mo> <mo class='MathClass-open' stretchy='false'>{</mo><mo class='MathClass-open' stretchy='false'>(</mo><mi>x</mi><mo class='MathClass-punc' stretchy='false'>,</mo><mi>y</mi><mo class='MathClass-close' stretchy='false'>)</mo> <mo class='MathClass-rel' stretchy='false'>∈</mo> <mi>C</mi><mo class='MathClass-rel' stretchy='false'>∣</mo><mi>y</mi> <mo class='MathClass-rel' stretchy='false'>&lt;</mo> <mn>0</mn><mo class='MathClass-close' stretchy='false'>}</mo></mrow></math>.
+There are obvious parametrisations <!-- l. 80 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mrow><msub><mrow><mi mathvariant='normal'>Φ</mi></mrow><mrow><mi>i</mi></mrow></msub> <mo class='MathClass-punc' stretchy='false'>:</mo> <mo class='MathClass-open' stretchy='false'>(</mo><mo class='MathClass-bin' stretchy='false'>−</mo><mn>1</mn><mo class='MathClass-punc' stretchy='false'>,</mo><mn>1</mn><mo class='MathClass-close' stretchy='false'>)</mo> <mo class='MathClass-rel' stretchy='false'>→</mo> <msub><mrow><mi>U</mi></mrow><mrow><mi>i</mi></mrow></msub></mrow></math>
+given by <!-- l. 80 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mrow><msub><mrow><mi mathvariant='normal'>Φ</mi></mrow><mrow><mn>1</mn></mrow></msub><mo class='MathClass-open' stretchy='false'>(</mo><mi>x</mi><mo class='MathClass-close' stretchy='false'>)</mo> <mo class='MathClass-rel' stretchy='false'>=</mo> <mo class='MathClass-open' stretchy='false'>(</mo><mi>x</mi><mo class='MathClass-punc' stretchy='false'>,</mo><mo class='MathClass-bin' stretchy='false'>+</mo><msqrt><mrow><mn>1</mn> <mo class='MathClass-bin' stretchy='false'>−</mo> <msup><mrow><mi>x</mi></mrow><mrow><mn>2</mn></mrow></msup></mrow></msqrt><mo class='MathClass-close' stretchy='false'>)</mo></mrow></math>
+and <!-- l. 80 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mrow><msub><mrow><mi mathvariant='normal'>Φ</mi></mrow><mrow><mn>2</mn></mrow></msub><mo class='MathClass-open' stretchy='false'>(</mo><mi>x</mi><mo class='MathClass-close' stretchy='false'>)</mo> <mo class='MathClass-rel' stretchy='false'>=</mo> <mo class='MathClass-open' stretchy='false'>(</mo><mi>x</mi><mo class='MathClass-punc' stretchy='false'>,</mo><mo class='MathClass-bin' stretchy='false'>−</mo><msqrt><mrow><mn>1</mn> <mo class='MathClass-bin' stretchy='false'>−</mo> <msup><mrow><mi>x</mi></mrow><mrow><mn>2</mn></mrow></msup></mrow></msqrt><mo class='MathClass-close' stretchy='false'>)</mo></mrow></math>.
+Compute (<!-- l. 80 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mo class='MathClass-bin' stretchy='false'>∗</mo></math>)
+using these parametrisations. <br class='newline' />                                                                             <span class='cmti-10x-x-109'>(2 points)</span>
+</dd><dt class='enumerate-enumitem'>
+<span class='cmbx-10x-x-109'>(d)</span></dt><dd class='enumerate-enumitem'>Compute this integral using the divergence theorem.                                          <span class='cmti-10x-x-109'>(2 points)</span></dd></dl>
+</dd><dt class='enumerate-enumitem'>
+<span class='cmbx-10x-x-109'>15.</span></dt><dd class='enumerate-enumitem'><span class='cmbx-10x-x-109'>The Proof is Left as an Exercise for the Reader</span>
+<!-- l. 174 --><p class='noindent'>Using Definitions 2.4 and 2.7, prove Lemma 2.9: The following properties hold for
+<!-- l. 175 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mi>a</mi><mo class='MathClass-punc' stretchy='false'>,</mo><mi>b</mi> <mo class='MathClass-rel' stretchy='false'>∈</mo> <mi>ℝ</mi></mrow></math> and
+                                                                                      
+                                                                                      
+<!-- l. 175 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mi>f</mi><mo class='MathClass-punc' stretchy='false'>,</mo><mi>g</mi> <mo class='MathClass-rel' stretchy='false'>∈</mo> <mi>C</mi><mo class='MathClass-open' stretchy='false'>(</mo><mi>A</mi><mo class='MathClass-close' stretchy='false'>)</mo></mrow></math>.
+     </p><dl class='description'><dt class='description'>
+<span class='cmbx-10x-x-109'>(i)</span> </dt><dd class='description'>
+     <!-- l. 177 --><p class='noindent'>Linearity: <!-- l. 178 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mrow><msub><mrow><mo>∫</mo>
+ <!-- nolimits --><!-- nolimits --></mrow><mrow><mi>A</mi></mrow></msub><mi mathvariant='italic'>𝑎𝑓</mi> <mo class='MathClass-bin' stretchy='false'>+</mo> <mi mathvariant='italic'>𝑏𝑔</mi><mspace class='thinspace' width='0.17em'></mspace><mi mathvariant='italic'>𝑑𝜎</mi> <mo class='MathClass-rel' stretchy='false'>=</mo> <mi>a</mi><msub><mrow><mo>∫
+ <!-- nolimits --></mo><!-- nolimits --></mrow><mrow><mi>A</mi></mrow></msub><mi>f</mi><mspace class='thinspace' width='0.17em'></mspace><mi mathvariant='italic'>𝑑𝜎</mi> <mo class='MathClass-bin' stretchy='false'>+</mo> <mi>b</mi><msub><mrow><mo>∫
+ <!-- nolimits --></mo><!-- nolimits --></mrow><mrow><mi>A</mi></mrow></msub><mi>g</mi><mspace class='thinspace' width='0.17em'></mspace><mi mathvariant='italic'>𝑑𝜎</mi></mrow></math>.
+                                                                              <span class='cmti-10x-x-109'>(1 point)</span>
+     </p></dd><dt class='description'>
+<span class='cmbx-10x-x-109'>(ii)</span> </dt><dd class='description'>
+     <!-- l. 181 --><p class='noindent'>Order Preserving: if <!-- l. 182 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mi>f</mi> <mo class='MathClass-rel' stretchy='false'>≤</mo> <mi>g</mi></mrow></math>
+     on <!-- l. 182 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mi>A</mi></math>
+     then <!-- l. 182 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mrow><msub><mrow><mo>∫</mo>
+ <!-- nolimits --><!-- nolimits --></mrow><mrow><mi>A</mi></mrow></msub><mi>f</mi><mspace class='thinspace' width='0.17em'></mspace><mi mathvariant='italic'>𝑑𝜎</mi> <mo class='MathClass-rel' stretchy='false'>≤</mo><msub><mrow><mo>∫
+ <!-- nolimits --></mo><!-- nolimits --></mrow><mrow><mi>A</mi></mrow></msub><mi>g</mi><mspace class='thinspace' width='0.17em'></mspace><mi mathvariant='italic'>𝑑𝜎</mi></mrow></math>.
+                                                                              <span class='cmti-10x-x-109'>(1 point)</span>
+     </p></dd><dt class='description'>
+<span class='cmbx-10x-x-109'>(iii)</span> </dt><dd class='description'>
+     <!-- l. 185 --><p class='noindent'>Triangle Inequality: <!-- l. 186 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mrow> <mrow><mo fence='true' form='prefix'>|</mo><mrow><msub><mrow><mo>∫</mo>
+ <!-- nolimits --><!-- nolimits --></mrow><mrow><mi>A</mi></mrow></msub><mi>f</mi><mspace class='thinspace' width='0.17em'></mspace><mi mathvariant='italic'>𝑑𝜎</mi></mrow><mo fence='true' form='postfix'>|</mo></mrow> <mo class='MathClass-rel' stretchy='false'>≤</mo><msub><mrow><mo>∫</mo>
+ <!-- nolimits --><!-- nolimits --></mrow><mrow><mi>A</mi></mrow></msub><mo class='MathClass-rel' stretchy='false'>|</mo><mi>f</mi><mo class='MathClass-rel' stretchy='false'>|</mo><mspace class='thinspace' width='0.17em'></mspace><mi mathvariant='italic'>𝑑𝜎</mi></mrow></math>.
+                                                                              <span class='cmti-10x-x-109'>(1 point)</span>
+     </p></dd><dt class='description'>
+<span class='cmbx-10x-x-109'>(iv)</span> </dt><dd class='description'>
+     <!-- l. 189 --><p class='noindent'>Transformation: If <!-- l. 190 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mi>P</mi> <mo class='MathClass-punc' stretchy='false'>:</mo> <msup><mrow><mi>ℝ</mi></mrow><mrow><mi>n</mi></mrow></msup> <mo class='MathClass-rel' stretchy='false'>→</mo> <msup><mrow><mi>ℝ</mi></mrow><mrow><mi>n</mi></mrow></msup></mrow></math>
+     is a euclidean motion (translation, reflection, rotation) and <!-- l. 190 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mi>s</mi> <mo class='MathClass-rel' stretchy='false'>∈</mo> <msup><mrow><mi>ℝ</mi></mrow><mrow><mo class='MathClass-bin' stretchy='false'>+</mo></mrow></msup></mrow></math>
+     is a scaling factor then <!-- l. 191 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mrow><msub><mrow><mo>∫</mo>
+ <!-- nolimits --><!-- nolimits --></mrow><mrow><mi>A</mi></mrow></msub><mi>f</mi><mspace class='thinspace' width='0.17em'></mspace><mi mathvariant='italic'>𝑑𝜎</mi> <mo class='MathClass-rel' stretchy='false'>=</mo> <msup><mrow><mi>s</mi></mrow><mrow><mi>k</mi></mrow></msup><msub><mrow><mo> ∫
+ <!-- nolimits --></mo><!-- nolimits --></mrow><mrow><msup><mrow><mo class='MathClass-open' stretchy='false'>(</mo><mi mathvariant='italic'>𝑠𝑃</mi><mo class='MathClass-close' stretchy='false'>)</mo></mrow><mrow><mo class='MathClass-bin' stretchy='false'>−</mo><mn>1</mn></mrow></msup><mo class='MathClass-open' stretchy='false'>[</mo><mi>A</mi><mo class='MathClass-close' stretchy='false'>]</mo></mrow></msub><mi>f</mi> <mo class='MathClass-bin' stretchy='false'>∘</mo> <mo class='MathClass-open' stretchy='false'>(</mo><mi mathvariant='italic'>𝑠𝑃</mi><mo class='MathClass-close' stretchy='false'>)</mo><mspace class='thinspace' width='0.17em'></mspace><mi mathvariant='italic'>𝑑𝜎</mi></mrow></math>.
+                                                                             <span class='cmti-10x-x-109'>(3 points)</span></p></dd></dl>
+</dd><dt class='enumerate-enumitem'>
+<span class='cmbx-10x-x-109'>16.</span></dt><dd class='enumerate-enumitem'><span class='cmbx-10x-x-109'>The Black Spot</span>
+<!-- l. 310 --><p class='noindent'>Consider the plane <!-- l. 310 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><msup><mrow><mi>ℝ</mi></mrow><mrow><mn>2</mn></mrow></msup></math>,
+a disc <!-- l. 310 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mrow><msub><mrow><mi>B</mi></mrow><mrow><mi>r</mi></mrow></msub> <mo class='MathClass-rel' stretchy='false'>=</mo> <mo class='MathClass-open' stretchy='false'>{</mo><msup><mrow><mi>x</mi></mrow><mrow><mn>2</mn></mrow></msup> <mo class='MathClass-bin' stretchy='false'>+</mo> <msup><mrow><mi>y</mi></mrow><mrow><mn>2</mn></mrow></msup> <mo class='MathClass-rel' stretchy='false'>≤</mo> <msup><mrow><mi>r</mi></mrow><mrow><mn>2</mn></mrow></msup><mo class='MathClass-close' stretchy='false'>}</mo></mrow></math> and
+the function <!-- l. 310 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mi>g</mi><mo class='MathClass-open' stretchy='false'>(</mo><mi>x</mi><mo class='MathClass-punc' stretchy='false'>,</mo><mi>y</mi><mo class='MathClass-close' stretchy='false'>)</mo> <mo class='MathClass-rel' stretchy='false'>=</mo> <mi class='loglike'>ln</mi><mo>⁡<!-- FUNCTION APPLICATION --></mo><!-- nolimits --><mo class='MathClass-open' stretchy='false'>(</mo><msup><mrow><mi>x</mi></mrow><mrow><mn>2</mn></mrow></msup> <mo class='MathClass-bin' stretchy='false'>+</mo> <msup><mrow><mi>y</mi></mrow><mrow><mn>2</mn></mrow></msup><mo class='MathClass-close' stretchy='false'>)</mo></mrow></math>.
+</p><dl class='enumerate-enumitem'><dt class='enumerate-enumitem'>
+<span class='cmbx-10x-x-109'>(a)</span></dt><dd class='enumerate-enumitem'>By calculating <!-- l. 313 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mi class='MathClass-op'>∇</mi><mo> ⁡<!-- FUNCTION APPLICATION --></mo><mi>g</mi> <mo class='MathClass-bin' stretchy='false'>⋅</mo> <mi>N</mi></mrow></math> for the
+outward pointing normal <!-- l. 313 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mi>N</mi> <mo class='MathClass-rel' stretchy='false'>=</mo> <mfrac><mrow><mn>1</mn></mrow> 
+<mrow><mi>r</mi></mrow></mfrac><mo class='MathClass-open' stretchy='false'>(</mo><mi>x</mi><mo class='MathClass-punc' stretchy='false'>,</mo><mi>y</mi><mo class='MathClass-close' stretchy='false'>)</mo></mrow></math>,
+show that the value of the integral <table class='equation-star'><tr><td>
+<!-- l. 314 --><math class='equation' display='block' xmlns='http://www.w3.org/1998/Math/MathML'><mrow>
+                                    <msub><mrow><mo>∫
+ <!-- nolimits --></mo><!-- nolimits --></mrow><mrow><mi>∂</mi><msub><mrow><mi>B</mi></mrow><mrow><mi>r</mi></mrow></msub></mrow></msub><mi class='MathClass-op'>∇</mi><mo> ⁡<!-- FUNCTION APPLICATION --></mo><mi>g</mi> <mo class='MathClass-bin' stretchy='false'>⋅</mo> <mi>N</mi><mspace class='thickpace' width='0.28em'></mspace><mi mathvariant='italic'>𝑑𝜎</mi>
+</mrow></math></td></tr></table>
+<!-- l. 317 --><p class='noindent'>does not depend on the radius <!-- l. 317 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mi>r</mi></math>.
+                                                                             <span class='cmti-10x-x-109'>(2 points)</span>
+                                                                                      
+                                                                                      
+</p></dd><dt class='enumerate-enumitem'>
+<span class='cmbx-10x-x-109'>(b)</span></dt><dd class='enumerate-enumitem'>Can you explain this fact using the divergence theorem? <br class='newline' />Hint: Apply the divergence theorem to the region <!-- l. 321 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mrow><msub><mrow><mi>A</mi></mrow><mrow><mi>r</mi><mo class='MathClass-punc' stretchy='false'>,</mo><mi>R</mi></mrow></msub> <mo class='MathClass-rel' stretchy='false'>=</mo> <msub><mrow><mi>B</mi></mrow><mrow><mi>R</mi></mrow></msub> <mo class='MathClass-bin' stretchy='false'>∖</mo><mover accent='false' class='mml-overline'><mrow><msub><mrow><mi>B</mi></mrow><mrow><mi>r</mi></mrow></msub></mrow><mo accent='true'>¯</mo></mover></mrow></math>
+for two different radii <!-- l. 321 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mi>r</mi> <mo class='MathClass-rel' stretchy='false'>&lt;</mo> <mi>R</mi></mrow></math>.
+                                                                             <span class='cmti-10x-x-109'>(3 points)</span></dd></dl>
+</dd></dl>
+    
+</body> 
+</html>
