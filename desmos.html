@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="description" content="Ross Ogilvie is mathematician at the University of Mannheim.">
+<meta name="author" content="Ross Ogilvie">
+<meta name='robots' content='index, follow'>
+<meta name='geo.placename' content='Australia'>
+<meta name='expires' content='never'>
+<meta name='target' content='global'>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Ross Ogilvie</title>
+
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+<style type="text/css">
+body 
+{
+	background-color: black;
+	color: white;
+	margin: 10px;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+a
+{
+	color: white;
+}
+
+iframe
+{
+    display: block;
+    margin: 0 auto;
+}
+</style>
+</head>
+
+<body>
+<h2>Desmos Gallery</h2>
+<p>
+Some years ago I fell in love with Desmos as a visualization tool.
+I find it great for teaching for two reasons: it strikes a good balance between intuitiveness and power, and it's web-based so no installation required.
+Together this means that students actually use it.
+Here are a few of my favorite examples.
+</p>
+
+<h3>The Lorenz System</h3>
+<p>
+This is a <a href="https://en.wikipedia.org/wiki/Lorenz_system">classic example</a> of a chaotic dyanimical system.
+It was discovered while trying to make a model of atmospheric conditions.
+It is deterministic (no random choice), yet it is effectively impossible to predict how many times it loops around the left node before it flips over the right, and vice versa.
+And two points that begin near each other can end up far apart.
+You can move the sliders to change the parameters \(\sigma,R,b\), which correspond to atmospheric properties, as well the starting point \((x_0,y_0,z_0)\).
+</p>
+<p><a href="https://www.desmos.com/3d/hbm1vtoxhd">Link</a></p>
+<iframe src="https://www.desmos.com/3d/hbm1vtoxhd" width="90%" style="min-height:600px"></iframe> 
+</body>
+
+
+<h3>The Helicoid-Catenoid Family</h3>
+<p>
+Naturally these visualizations are a boon to teaching differential geometry.
+Here we have the isometric family that contains the helicoid (spirally shape) and catenoid (tubey shape).
+Notice that the although the red and blue curves are bending, their lengths are not changing: there is bending but not stretching.
+Thus the transformation is an <i>isometry</i>. 
+</p>
+<p><a href="https://www.desmos.com/3d/bsohpabbkc">Link</a></p>
+<iframe src="https://www.desmos.com/3d/bsohpabbkc" width="90%" style="min-height:600px"></iframe> 
+
+
+<h3>Light waves</h3>
+<p>
+This one was a bit of an out-of-the-box experiment. 
+It's very pretty, but I'm not sure how effective it was as a teaching aid.
+In Intro PDEs we solve the wave equation in 3D space.
+A typical example is a wave of light or sound.
+In particular, it is important to understand <i>spherical waves</i>, but it is hard to show both the overall shape and intensity at the same time.
+The part of the wave that moves outwards loses intensity, but the inward moving part actually concentrates.
+Move the time \(T\) slider to move the wave.
+</p>
+<p><a href="https://www.desmos.com/3d/yk7khuoipe">Link</a></p>
+<iframe src="https://www.desmos.com/3d/yk7khuoipe" width="90%" style="min-height:600px"></iframe> 
+
+
+<h3>Level Set</h3>
+<p>
+Not every visualization needs to be super fancy.
+Here we have the function \(f(x,y)=x^{3}-\frac{2}{3}y^{3}-2y^{2}-36x+6y\) and we want to find its critical points.
+As you move the blue dot, the value of \(f\) at this point is shown.
+The level set is also graphed.
+Can you find any local maxima and minima?
+What do you notice about the shape of the level set in these cases?
+</p>
+<p><a href="https://www.desmos.com/calculator/mgpb4zynyy">Link</a></p>
+<iframe src="https://www.desmos.com/calculator/mgpb4zynyy" width="90%" style="min-height:600px"></iframe> 
+
+
+<h3>Frenet Solver</h3>
+<p>
+Because Desmos can integrate and differentiate, often you can just input the formula straight out of the lecture slides. 
+Here we integrate out the Frenet equations in the plane to get a curve given its curvature function \(k(s)\).
+Try putting different functions and see what you get.
+</p>
+<p><a href="https://www.desmos.com/calculator/yke14wryxi">Link</a></p>
+<iframe src="https://www.desmos.com/calculator/yke14wryxi" width="90%" style="min-height:600px"></iframe> 
+
+
+<h3>Pendulum</h3>
+<p>
+There is a lot going on here, because there are two different diagrams side-by-side.
+On the right, we have a pendulum. 
+Press play on time \(T\) and it swings back and forth, eventually coming to rest hanging vertically down.
+The thin blue line shows the velocity.
+</p>
+<p>
+On the left, we have a coordinate representation of the state of the system. 
+The x-axis represents the angle, and the y-axis represents the velocity.
+If you move the red dot around, you can change the starting conditions of the pendulum.
+When the simulation is running, the purple dot shows the current state.
+The purple curve shows the evolution of the system.
+Finally, the light and dark yellow regions shows those states which have lower energy than the start and current state respectively.
+Since this pendulum has friction, it loses energy as time goes on.
+Therefore we know it is impossible to reach some states (for example, when it is impossible to flip over).
+</p>
+<p><a href="https://www.desmos.com/calculator/uf7gwegb8c">Link</a></p>
+<iframe src="https://www.desmos.com/calculator/uf7gwegb8c" width="90%" style="min-height:600px"></iframe> 
+</html>
